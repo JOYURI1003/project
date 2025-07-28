@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+/*Wine*/
+
+.wine_item .new_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #333;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.wine_but_wrap {
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.wine_but {
+  height: 90px;
+  line-height: 90px;
+  transition: 0.5s;
+  margin: 0 20px;
+  border-bottom: 2px solid transparent;
+}
+.wine_but:hover {
+  border-bottom: 2px solid #502e82;
+  color: #502e82;
+  font-weight: 500;
+}
+
+.wine_item ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(32%, auto));
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+.wine_item ul li {
+  position: relative;
+}
+.wine_img {
+  position: relative;
+  border: 1px solid #e8e8e8;
+  text-align: center;
+  background: #fff;
+  margin-bottom: 15px;
+}
+.wine_img img {
+  display: inline-block;
+  height: 400px;
+  padding: 20px;
+  object-fit: cover;
+}
+.wine_item span {
+  display: inline-block;
+  padding: 20px 0;
+}
+.wine_item h3 {
+  font-size: 24px;
+  color: #333;
+  font-weight: 500;
+}
+.wine_item p {
+  color: #808080;
+  padding: 5px 0 15px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wine_list {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+.w_search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  position: relative;
+}
+input:focus {
+  outline: none;
+}
+.w_search_btn {
+  background: url(../image/ico_searchOpen_bk.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+  position: absolute;
+  right: 15px;
+}
+.content select {
+  height: 40px;
+  width: 180px;
+  padding: 5px;
+  margin: 10px 0;
+}
+.content input {
+  height: 40px;
+  width: 350px;
+  padding: 10px 45px 10px 5px;
+  margin: 10px 0;
+}
+.content > p {
+  padding: 20px 0;
+}
+.content_wrap {
+  width: 100%;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+/*추후 추가-삭제할 클래스명(tab)*/
+.content.tab {
+  display: block;
+}
+
+.wine_but.tab {
+  border-bottom: 2px solid #502e82;
+  color: #502e82;
+  font-weight: 500;
+}
+/*
+.content:nth-child(1){
+background-color: pink;
+}
+.content:nth-child(2){
+background-color: lemonchiffon;
+}
+.content:nth-child(3){
+background-color: skyblue;
+}*/

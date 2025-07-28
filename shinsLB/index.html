@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/jquery-3.7.1.min.js" defer></script>
+    <script src="js/slick.min.js" defer></script>
+    <script
+      src="https://unpkg.com/swiper@8/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="js/event.js" defer></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>신세계 L&B</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="gnb">
+        <h1>
+          <a href="index.html" alt="신세계 L&B"
+            ><span class="blind">신세계 L&B</span></a
+          >
+        </h1>
+        <nav>
+          <h2 class="blind">주메뉴</h2>
+          <ul>
+            <li>
+              <a href="company.html" class="hvr">Company</a>
+              <ul class="subMenu">
+                <li><a href="company.html">회사소개</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">채용</a></li>
+                <li><a href="#">수상 및 인증</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="product.html" class="hvr">Product</a>
+              <ul class="subMenu">
+                <li><a href="product.html" title="와인 전체보기">와인</a></li>
+                <li><a href="#">위스키&스피릿</a></li>
+                <li><a href="#">맥주&기타주류</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="news.html" class="hvr">News</a>
+              <ul class="subMenu">
+                <li><a href="news.html">프로모션</a></li>
+                <li><a href="#">매장소식</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="csr.html" class="hvr">CSR</a>
+              <ul class="subMenu">
+                <li><a href="csr.html">문화지원/상생</a></li>
+                <li><a href="#">임직원 봉사활동</a></li>
+                <li><a href="#">취약계층 지원</a></li>
+                <li><a href="#">희망배달 캠페인</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="about.html" class="hvr">About Us</a>
+              <ul class="subMenu">
+                <li><a href="about.html">Contact Us</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">입점 안내</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="controls">
+          <ul>
+            <li>
+              <button type="button"><span class="blind">검색버튼</span></button>
+            </li>
+            <li class="lang">
+              <a href="#" title="영문 페이지 새창으로 이동" target="_blank"
+                >ENG</a
+              >
+            </li>
+            <li class="order">
+              <a
+                href="index.html"
+                title="와인앤모어앱 새창으로 이동"
+                target="_blank"
+                >와인앤모어 앱</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--//gnb-->
+    </header>
+    <!--//header-->
+
+    <main>
+      <section class="Slide">
+        <h2 class="blind">슬라이드 메인</h2>
+        <ul class="slideMain">
+          <li>
+            <a href="">
+              <img src="image/main_s1.png" />
+              <div class="slideTxt">
+                <p class="font30">A story in every bottle</p>
+                <p class="font40">
+                  한 병의 술에 이야기를 담아,<br />고객의 라이프스타일을
+                  디자인합니다.
+                </p>
+                <p class="font20">
+                  우리는 술 본연의 가치에 집중하며<br />그 안에 깃든 의미를
+                  문화와 예술, 삶의 다양한 영역에 확장합니다.<br />고객의
+                  라이프스타일을 디자인하는 기업이 되겠습니다.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="image/main_s2.png" />
+              <div class="slideTxt">
+                <p class="font30">Reader and Leader</p>
+                <p class="font40">
+                  시장 트렌드를 빠르게 읽고 분석하며,<br />
+                  주류 시장을 선도합니다.
+                </p>
+                <p class="font20">
+                  신세계L&B는 시장에 대한 이해와 주류 유통 리더십을 바탕으로
+                  <br />고객의 가치와 다채로운 경험을 위해 끊임없이 변화하고
+                  도전합니다.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="image/main_s3.png" />
+              <div class="slideTxt">
+                <p class="font30">Drink, Play, Love</p>
+                <p class="font40">
+                  와인앤모어는 다채로운 상품과 믿음직한 가격을 선보이며,<br />새로운
+                  주류문화를 이끌어갑니다.
+                </p>
+                <p class="font20">
+                  대한민국의 주류&식음료 쇼핑 핫스팟, <br />주류전문매장
+                  와인앤모어는 고객의 취향에 귀 기울이며<br />다채로운 주류와
+                  스토리를 선보이고 있습니다.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="image/main_s4.png" />
+              <div class="slideTxt">
+                <p class="font30">Sustainability Initiative</p>
+                <p class="font40">
+                  건강한 주류 문화를 이끌며<br />
+                  지속가능한 성장을 추구합니다.
+                </p>
+                <p class="font20">
+                  신세계L&B는 사회적 가치를 창출하는 <br />소비 문화를 선도하며,
+                  건강하고 지속가능한 주류 시장의 미래를<br />만드는 일에
+                  집중하고 있습니다.
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!--//Slide-->
+
+      <div class="inner">
+        <section class="vision">
+          <div>
+            <h2 class="h2_48">Vision</h2>
+            <p class="p18">
+              고객의 라이프스타일에 가치를<br />더하는 기업이 되겠습니다
+            </p>
+          </div>
+
+          <ul>
+            <li>
+              <img src="image/vision01.png" alt="" />
+              <p>가치 혁신 경영</p>
+              <span
+                >끊임없는 도전과 혁신으로 주류 전문 기업으로서의 가치를
+                확장하겠습니다.</span
+              >
+            </li>
+            <li>
+              <img src="image/vision02.png" alt="" />
+              <p>지속 가능 경영</p>
+              <span
+                >협력사와 동반성장을 일구고 지역사회와 협력하며 지속가능한
+                내일을 준비합니다.</span
+              >
+            </li>
+            <li>
+              <img src="image/vision03.png" alt="" />
+              <p>인재 중심 경영</p>
+              <span>글로벌 인재 양성을 위해 과감히 투자하겠습니다.</span>
+            </li>
+            <li>
+              <img src="image/vision04.png" alt="" />
+              <p>고객 중심 경영</p>
+              <span>고객의 신뢰와 만족을 최우선으로 생각합니다.</span>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="back_color">
+        <div class="inner">
+          <section class="container">
+            <h2 class="h2_48">Wine</h2>
+
+            <div class="slide_ovh">
+              <div class="top_mask swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="item swiper-slide cb">
+                    <div class="img fl">
+                      <div class="mov_frame">
+                        <div class="cont">
+                          <img
+                            src="image/20241212191753JWVBS2.jpg"
+                            alt="레드와인 쉐이퍼 레드 숄더 랜치 샤르도네"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="txt_box fr">
+                      <p class="nation nation6">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">레드와인</span>
+                      </p>
+                      <p class="tit">쉐이퍼 레드 숄더 랜치 샤르도네</p>
+                      <div class="txt_cont">
+                        <p>Shafer Red Shoulder Ranch Chardonnay</p>
+                        <p>컬트 화이트의 새로운 계보</p>
+                      </div>
+                      <a href="" class="more_btn"
+                        >쉐이퍼 빈야드 <strong>더보기</strong></a
+                      >
+                    </div>
+                  </div>
+                  <div class="item swiper-slide cb">
+                    <div class="img fl">
+                      <div class="mov_frame">
+                        <div class="cont">
+                          <img
+                            src="image/BeesVidalIcewine.jpg"
+                            alt="트웬티 비스 비달 아이스와인 "
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="txt_box fr">
+                      <p class="nation nation2">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">스위트 와인</span>
+                      </p>
+                      <p class="tit">트웬티 비스 비달 아이스와인</p>
+                      <div class="txt_cont">
+                        <p>20 Bees Vidal Icewine</p>
+                        <p>나이아가라 정기를 받은 아이스와인 전문 와이너리</p>
+                      </div>
+                      <a href="" class="more_btn"
+                        >더 프리즈너 와인 컴퍼니 <strong>더보기</strong></a
+                      >
+                    </div>
+                  </div>
+                  <div class="item swiper-slide cb">
+                    <div class="img fl">
+                      <div class="mov_frame">
+                        <div class="cont">
+                          <img
+                            src="image/20240823180358SS342D.jpg"
+                            alt="화이트 스파클링 와인 JP슈네 스파클링 스위트"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="txt_box fr">
+                      <p class="nation nation1">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">화이트 스파클링 와인</span>
+                      </p>
+                      <p class="tit">JP슈네 스파클링 스위트</p>
+                      <div class="txt_cont">
+                        <p>JP Chenet Sparkling Sweet</p>
+                        <p>
+                          Different Bottle, Delicious Wine, 전세계 판매 1위
+                          프랑스 와인!
+                        </p>
+                      </div>
+                      <a href="" class="more_btn"
+                        >JB슈네 <strong>더보기</strong></a
+                      >
+                    </div>
+                  </div>
+                  <div class="item swiper-slide cb">
+                    <div class="img fl">
+                      <div class="mov_frame">
+                        <div class="cont">
+                          <img
+                            src="image/20230519174840MPTXV9.jpg"
+                            alt="화이트와인 G7 소비뇽 블랑"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="txt_box fr">
+                      <p class="nation nation6">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">레드와인</span>
+                      </p>
+                      <p class="tit">G7 소비뇽 블랑</p>
+                      <div class="txt_cont">
+                        <p>G7 Sauvignon Blanc</p>
+                        <p>
+                          와인 고민은 그만, 최단기간 밀리언셀러 G7과 함께하세요
+                        </p>
+                      </div>
+                      <a href="" class="more_btn">G7 <strong>더보기</strong></a>
+                    </div>
+                  </div>
+                  <div class="item swiper-slide cb">
+                    <div class="img fl">
+                      <div class="mov_frame">
+                        <div class="cont">
+                          <img
+                            src="image/20230519174840MPTXV9.jpg"
+                            alt="화이트와인 우드브릿지 소비뇽 블랑"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="txt_box fr">
+                      <p class="nation nation6">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">화이트와인</span>
+                      </p>
+                      <p class="tit">우드브릿지 소비뇽 블랑</p>
+                      <div class="txt_cont">
+                        <p>Woodbridge Sauvignon Blanc</p>
+                        <p>로버트 몬다비가 소개하는 미국 와인의 첫 걸음</p>
+                      </div>
+                      <a href="" class="more_btn"
+                        >로버트 몬다비 <strong>더보기</strong></a
+                      >
+                    </div>
+                  </div>
+                  <div class="item swiper-slide cb">
+                    <div class="img fl">
+                      <div class="mov_frame">
+                        <div class="cont">
+                          <img
+                            src="image/Angelic.jpg"
+                            alt="화이트와인 안젤리카 자파타 까베르네 소비뇽"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="txt_box fr">
+                      <p class="nation nation6">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">화이트와인</span>
+                      </p>
+                      <p class="tit">안젤리카 자파타 까베르네 소비뇽</p>
+                      <div class="txt_cont">
+                        <p>Angelica Zapata Cabernet Sauvignon</p>
+                        <p>
+                          100년 소유 빈야드, 1,000m 고도의 산도 밸런스를 만나다
+                        </p>
+                      </div>
+                      <a href="" class="more_btn"
+                        >까테나 자파타 <strong>더보기</strong></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="arrow_btn p">
+                <i class="fa fa-chevron-circle-left"></i>
+              </button>
+              <button type="button" class="arrow_btn n">
+                <i class="fa fa-chevron-circle-right"></i>
+              </button>
+              <div class="bottom_ovh">
+                <div thumbsSlider="" class="swiper thumb_mask">
+                  <div class="swiper-wrapper">
+                    <div class="item swiper-slide">
+                      <div class="img">
+                        <img
+                          src="image/20241212191753JWVBS2.jpg"
+                          alt="레드와인 쉐이퍼 레드 숄더 랜치 샤르도네"
+                        />
+                      </div>
+                    </div>
+                    <div class="item swiper-slide">
+                      <div class="img">
+                        <img
+                          src="image/BeesVidalIcewine.jpg"
+                          alt="트웬티 비스 비달 아이스와인 "
+                        />
+                      </div>
+                    </div>
+                    <div class="item swiper-slide">
+                      <div class="img">
+                        <img
+                          src="image/20240823180358SS342D.jpg"
+                          alt="화이트 스파클링 와인 JP슈네 스파클링 스위트"
+                        />
+                      </div>
+                    </div>
+                    <div class="item swiper-slide">
+                      <div class="img">
+                        <img
+                          src="image/20230519174840MPTXV9.jpg"
+                          alt="화이트와인 G7 소비뇽 블랑"
+                        />
+                      </div>
+                    </div>
+                    <div class="item swiper-slide">
+                      <div class="img">
+                        <img
+                          src="image/20230519174840MPTXV9.jpg"
+                          alt="화이트와인 우드브릿지 소비뇽 블랑"
+                        />
+                      </div>
+                    </div>
+                    <div class="item swiper-slide">
+                      <div class="img">
+                        <img
+                          src="image/Angelic.jpg"
+                          alt="화이트와인 안젤리카 자파타 까베르네 소비뇽"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="progressbar"></div>
+                </div>
+              </div>
+            </div>
+            <a href="" class="morebt">전체보기</a>
+          </section>
+          <!--container-->
+
+          <section class="container">
+            <h2 class="h2_48">Whisky & Spirit</h2>
+
+            <div class="slide_ovh">
+              <div class="top_masks swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="item swiper-slide cb">
+                    <div class="img fl">
+                      <div class="mov_frame">
+                        <div class="cont">
+                          <img
+                            src="image/Evan.jpg"
+                            alt="위스키 쉐에반 윌리엄스 블랙"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="txt_box fr">
+                      <p class="nation nation1">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">위스키</span>
+                      </p>
+                      <p class="tit">쉐에반 윌리엄스 블랙</p>
+                      <div class="txt_cont">
+                        <p>Evan Williams Black</p>
+                        <p>아메리칸 정통 버번 위스키</p>
+                      </div>
+                      <a href="" class="more_btn"
+                        >에반 웰리엄스 <strong>더보기</strong></a
+                      >
+                    </div>
+                  </div>
+                  <div class="item swiper-slide cb">
+                    <div class="img fl">
+                      <div class="mov_frame">
+                        <div class="cont">
+                          <img
+                            src="image/tottori.jpg"
+                            alt="위스키 마쓰이 돗토리 버번 배럴"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="txt_box fr">
+                      <p class="nation nation2">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">위스키</span>
+                      </p>
+                      <p class="tit">마쓰이 돗토리 버번 배럴</p>
+                      <div class="txt_cont">
+                        <p>Matsui Whisky Tottori Bourbon Barrel</p>
+                        <p>달콤한 향과 부드러움을 강조한 위스키</p>
+                      </div>
+                      <a href="" class="more_btn"
+                        >마쓰이 주조 <strong>더보기</strong></a
+                      >
+                    </div>
+                  </div>
+                  <div class="item swiper-slide cb">
+                    <div class="img fl">
+                      <div class="mov_frame">
+                        <div class="cont">
+                          <img
+                            src="image/elijah.jpg"
+                            alt="위스키 일라이저 크레이그 스트레이트 라이"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="txt_box fr">
+                      <p class="nation nation1">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">위스키</span>
+                      </p>
+                      <p class="tit">일라이저 크레이그 스트레이트 라이</p>
+                      <div class="txt_cont">
+                        <p>Elijah Craig Straight Rye</p>
+                        <p>헤븐힐 최상급 라이 위스키</p>
+                      </div>
+                      <a href="" class="more_btn"
+                        >일라이저 크레이그 <strong>더보기</strong></a
+                      >
+                    </div>
+                  </div>
+                  <div class="item swiper-slide cb">
+                    <div class="img fl">
+                      <div class="mov_frame">
+                        <div class="cont">
+                          <img
+                            src="image/glenmoray.jpg"
+                            alt="위스키 글렌 모레이 엘긴 클래식 피티드 싱글 몰트"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="txt_box fr">
+                      <p class="nation nation1">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">위스키</span>
+                      </p>
+                      <p class="tit">
+                        글렌 모레이 엘긴 클래식 피티드 싱글 몰트
+                      </p>
+                      <div class="txt_cont">
+                        <p>Glen Moray Elgin Classic Peated Single Malt</p>
+                        <p>스카치 피트를 추구하는 당신을 위한 정착지</p>
+                      </div>
+                      <a href="" class="more_btn"
+                        >글렌 모레이 <strong>더보기</strong></a
+                      >
+                    </div>
+                  </div>
+                  <div class="item swiper-slide cb">
+                    <div class="img fl">
+                      <div class="mov_frame">
+                        <div class="cont">
+                          <img
+                            src="image/larceny.jpg"
+                            alt="위스키 라세니 배럴 프루프"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="txt_box fr">
+                      <p class="nation nation1">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">위스키</span>
+                      </p>
+                      <p class="tit">라세니 배럴 프루프</p>
+                      <div class="txt_cont">
+                        <p>Larceny Barrel Proof</p>
+                        <p>훔쳐 마실 수 밖에 없었던 뛰어난 맛, 라세니</p>
+                      </div>
+                      <a href="" class="more_btn"
+                        >라세니 <strong>더보기</strong></a
+                      >
+                    </div>
+                  </div>
+                  <div class="item swiper-slide cb">
+                    <div class="img fl">
+                      <div class="mov_frame">
+                        <div class="cont">
+                          <img
+                            src="image/chuhi_peach.jpg"
+                            alt="스위토나 츄하이 복숭아"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="txt_box fr">
+                      <p class="nation nation1">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">츄하이</span>
+                      </p>
+                      <p class="tit">스위토나 츄하이 복숭아</p>
+                      <div class="txt_cont">
+                        <p>Sweetona Chu-Hi Peach</p>
+                        <p>씁쓸했던 하루를 위로하는 새콤달콤 츄하이</p>
+                      </div>
+                      <a href="" class="more_btn"
+                        >츄하이 <strong>더보기</strong></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="arrow_btn p">
+                <i class="fa fa-chevron-circle-left"></i>
+              </button>
+              <button type="button" class="arrow_btn n">
+                <i class="fa fa-chevron-circle-right"></i>
+              </button>
+              <div class="bottom_ovh">
+                <div thumbsSlider="" class="swiper thumb_masks">
+                  <div class="swiper-wrapper">
+                    <div class="item swiper-slide">
+                      <div class="img">
+                        <img
+                          src="image/tottori.jpg"
+                          alt="위스키 마쓰이 돗토리 버번 배럴"
+                        />
+                      </div>
+                    </div>
+                    <div class="item swiper-slide">
+                      <div class="img">
+                        <img
+                          src="image/elijah.jpg"
+                          alt="위스키 일라이저 크레이그 스트레이트 라이"
+                        />
+                      </div>
+                    </div>
+                    <div class="item swiper-slide">
+                      <div class="img">
+                        <img
+                          src="image/elijah.jpg"
+                          alt="위스키 일라이저 크레이그 스트레이트 라이"
+                        />
+                      </div>
+                    </div>
+                    <div class="item swiper-slide">
+                      <div class="img">
+                        <img
+                          src="image/glenmoray.jpg"
+                          alt="위스키 글렌 모레이 엘긴 클래식 피티드 싱글 몰트"
+                        />
+                      </div>
+                    </div>
+                    <div class="item swiper-slide">
+                      <div class="img">
+                        <img
+                          src="image/larceny.jpg"
+                          alt="위스키 라세니 배럴 프루프"
+                        />
+                      </div>
+                    </div>
+                    <div class="item swiper-slide">
+                      <div class="img">
+                        <img
+                          src="image/chuhi_peach.jpg"
+                          alt="스위토나 츄하이 복숭아"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="progressbar"></div>
+                </div>
+              </div>
+            </div>
+            <a href="" class="morebt">전체보기</a>
+          </section>
+          <!--container-->
+        </div>
+        <!--inner-->
+      </div>
+      <!--back_color-->
+
+      <div class="inner">
+        <section class="CSR_box martop_wrap">
+          <h2 class="h2_48">CSR</h2>
+          <ul>
+            <li>
+              <a href=""
+                ><img
+                  src="image/20241129121351MT2YU2.jpg"
+                  alt="서울문화재단 제휴전시회 「에센스 앤 모어(Essence and More)_식탁의 정수」"
+              /></a>
+              <p class="font20">
+                서울문화재단 제휴전시회 「에센스 앤 모어(Essence and
+                More)_식탁의 정수」
+              </p>
+              <span class="cate">문화지원/상생</span>
+              <span class="date">2024.11.29</span>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="image/20241129144952K5JEX5.jpg"
+                  alt="서울디자인재단 <영디자이너 + 기업 브랜드 전시> 개최"
+              /></a>
+              <p class="font20">
+                서울디자인재단 &lt;영디자이너 + 기업 브랜드 전시 &gt; 개최
+              </p>
+              <span class="cate">문화지원/상생</span>
+              <span class="date">2024.11.29</span>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="image/20240829171717A9LYYQ.jpg"
+                  alt="서울디자인재단 영디자이너+기업 브랜드 전시 협력"
+              /></a>
+              <p class="font20">
+                서울디자인재단 &lt;영디자이너+기업 브랜드 전시&gt; 협력
+              </p>
+              <span class="cate">문화지원/상생</span>
+              <span class="date">2024.07.16</span>
+            </li>
+          </ul>
+          <a href="" class="morebt">더보기</a>
+        </section>
+      </div>
+
+      <section class="Promotionbox back_color">
+        <div class="martop_wrap">
+          <div class="inner Promotion">
+            <h2 class="h2_48">Promotion</h2>
+            <a href="" class="morebt">더보기</a>
+          </div>
+          <ul class="promotion-slider">
+            <li>
+              <a href=""
+                ><img
+                  src="image/20250319152002TH86M5.jpg"
+                  alt="와인앤 모어 4월 행사리스트"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="image/202502181154583E3WHU.jpg"
+                  alt="와인앤 모어 3월 행사리스트"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="image/20250120142622XVR95P.jpg"
+                  alt="와인앤 모어 2월 행사리스트"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="image/202412201211456RX47D.jpg"
+                  alt="와인앤 모어 1월 행사리스트"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="inner">
+        <section class="notice">
+          <div class="noticeTitle">
+            <h2 class="h2_48">Notice</h2>
+            <p class="p18">더보기</p>
+          </div>
+          <ul class="clear">
+            <li>
+              2024년(제17기) 결산공고 <span class="date">2025. 03.19</span>
+            </li>
+            <li>
+              영상정보처리기기 운영ㆍ관리방침 개정 안내(v 1.8)<span class="date"
+                >2025.01.17</span
+              >
+            </li>
+            <li>
+              [안내] 개인정보 처리방침 개정<span class="date">2025. 03.19</span>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="inner store">
+        <section class="store_txt">
+          <h2 class="h2_48">Store</h2>
+          <p>
+            백화점, 와인앤모어, 대형마트 등 신세계L&B의 매장을 확인해보세요.
+          </p>
+          <a href="">자세히 보기</a>
+        </section>
+      </div>
+    </main>
+    <!--//main-->
+    <footer>
+      <div class="inner footer">
+        <p><img src="image/foot_logo.png" alt="footer logo" /></p>
+        <ul>
+          <li><a href="">Contact Us</a></li>
+          <li>
+            <a href="" class="fontsty"><strong>개인정보처리방침</strong></a>
+          </li>
+          <li>
+            <a href="" class="fontsty">영상정보처리기기 운영ㆍ관리방침</a>
+          </li>
+        </ul>
+        <address>
+          서울특별시 광진구 아차산로 563 (광장동) 대한제지㈜ 사옥 7층대표전화 :
+          02-727-1685
+          <small>&copy;2023Shinsegae L&B Ltd. All Rights Reserved.</small>
+        </address>
+        <div class="footerImg">
+          <p><img src="image/foot_img1.png" alt="가족친화 우수기업 마크" /></p>
+          <p><img src="image/foot_img2.png" alt="문화예술후원 우수기관" /></p>
+          <p>
+            <a href=""
+              ><img src="image/foot_img3.png" alt="한국웹표준 인증"
+            /></a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

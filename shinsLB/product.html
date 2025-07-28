@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/event.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/wine.css" />
+
+    <title>신세계 L&B Product</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="gnb">
+        <h1>
+          <a
+            href="https://www.shinsegae-lnb.com/html/main/index.html"
+            alt="신세계 L&B"
+            ><span class="blind">신세계 L&B</span></a
+          >
+        </h1>
+        <nav>
+          <h2 class="blind">주메뉴</h2>
+          <ul>
+            <li>
+              <a href="company.html" class="hvr">Company</a>
+              <ul class="subMenu">
+                <li><a href="company.html">회사소개</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">채용</a></li>
+                <li><a href="#">수상 및 인증</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="product.html" class="hvr">Product</a>
+              <ul class="subMenu">
+                <li><a href="product.html" title="와인 전체보기">와인</a></li>
+                <li><a href="#">위스키&스피릿</a></li>
+                <li><a href="#">맥주&기타주류</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="news.html" class="hvr">News</a>
+              <ul class="subMenu">
+                <li><a href="news.html">프로모션</a></li>
+                <li><a href="#">매장소식</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="csr.html" class="hvr">CSR</a>
+              <ul class="subMenu">
+                <li><a href="csr.html">문화지원/상생</a></li>
+                <li><a href="#">임직원 봉사활동</a></li>
+                <li><a href="#">취약계층 지원</a></li>
+                <li><a href="#">희망배달 캠페인</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="about.html" class="hvr">About Us</a>
+              <ul class="subMenu">
+                <li><a href="about.html">Contact Us</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">입점 안내</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="controls">
+          <ul>
+            <li>
+              <button type="button"><span class="blind">검색버튼</span></button>
+            </li>
+            <li class="lang">
+              <a href="#" title="영문 페이지 새창으로 이동" target="_blank"
+                >ENG</a
+              >
+            </li>
+            <li class="order">
+              <a
+                href="index.html"
+                title="와인앤모어앱 새창으로 이동"
+                target="_blank"
+                >와인앤모어 앱</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--//gnb-->
+    </header>
+    <!--//header-->
+
+    <main>
+      <!--Wine-->
+      <div class="subBg2">
+        <div class="inner">
+          <section class="sub_top_txt">
+            <h2 class="h2_60">Product</h2>
+          </section>
+        </div>
+      </div>
+
+      <section class="wine">
+        <h2 class="blind">와인 종류 전체</h2>
+
+        <div class="wine_but_wrap">
+          <div class="wine_but font20 tab">와인</div>
+          <div class="wine_but font20">위스키&스피릿</div>
+          <div class="wine_but font20">맥주&기타주류</div>
+        </div>
+
+        <div class="inner">
+          <div class="content_wrap">
+            <div class="content tab">
+              <h2 class="h2_48 martop_wrap">와인</h2>
+              <p>총 <span class="cate_sy">719개</span>의 제품이 있습니다.</p>
+              <div class="wine_list">
+                <form action="" method="get">
+                  <select name="" id="">
+                    <option value="">와인종류</option>
+                    <option value="">레드 와인</option>
+                    <option value="">화이트 와인</option>
+                    <option value="">로제 와인</option>
+                    <option value="">샴페인</option>
+                  </select>
+                  <select name="" id="">
+                    <option value="">생산국</option>
+                    <option value="">뉴질랜드</option>
+                    <option value="">미국</option>
+                    <option value="">스페인</option>
+                    <option value="">아르헨티나</option>
+                  </select>
+                  <select name="" id="">
+                    <option value="">생산지</option>
+                    <option value="">말보로</option>
+                    <option value="">오레곤</option>
+                    <option value="">리오하</option>
+                    <option value="">멘도자</option>
+                  </select>
+                </form>
+                <div class="w_search">
+                  <label for="wine_name" class="blind"
+                    >와인 이름을 입력하세요</label
+                  >
+                  <input
+                    type="text"
+                    id="wine_name"
+                    placeholder="와인 이름을 입력하세요"
+                  />
+                  <button type="button" class="w_search_btn">
+                    <span class="blind">검색</span>
+                  </button>
+                </div>
+              </div>
+              <!--wine_list-->
+
+              <div class="wine_item">
+                <ul>
+                  <li>
+                    <a href="">
+                      <div class="wine_img">
+                        <img
+                          src="image/2025043012521467PPDV.jpg"
+                          alt="레드와인 피치니 메모로 엘리멘티 몬테풀치아노"
+                        />
+                      </div>
+                      <p class="nation nation6">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">레드와인</span>
+                      </p>
+                      <h3>피치니 메모로 엘리멘티 몬테풀치아노</h3>
+                      <p>Piccini Memoro Elementi Montepulciano</p>
+                      <p>
+                        이태리 국민와인 '메모로'를 한층 더 깊이 느낄 수 있는
+                        엘리멘티 시리즈
+                      </p>
+                      <span class="new_icon">NEW</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="wine_img">
+                        <img
+                          src="image/2025043012521467PPDV.jpg"
+                          alt="레드와인 피치니 메모로 엘리멘티 몬테풀치아노"
+                        />
+                      </div>
+                      <p class="nation nation1">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">레드와인</span>
+                      </p>
+                      <h3>피치니 메모로 엘리멘티 몬테풀치아노</h3>
+                      <p>Piccini Memoro Elementi Montepulciano</p>
+                      <p>
+                        이태리 국민와인 '메모로'를 한층 더 깊이 느낄 수 있는
+                        엘리멘티 시리즈
+                      </p>
+                      <span class="new_icon">NEW</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="wine_img">
+                        <img
+                          src="image/2025043012521467PPDV.jpg"
+                          alt="레드와인 피치니 메모로 엘리멘티 몬테풀치아노"
+                        />
+                      </div>
+                      <p class="nation nation2">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">레드와인</span>
+                      </p>
+                      <h3>피치니 메모로 엘리멘티 몬테풀치아노</h3>
+                      <p>Piccini Memoro Elementi Montepulciano</p>
+                      <p>
+                        이태리 국민와인 '메모로'를 한층 더 깊이 느낄 수 있는
+                        엘리멘티 시리즈
+                      </p>
+                      <span class="new_icon">NEW</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="wine_img">
+                        <img
+                          src="image/2025043012521467PPDV.jpg"
+                          alt="레드와인 피치니 메모로 엘리멘티 몬테풀치아노"
+                        />
+                      </div>
+                      <p class="nation nation6">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">레드와인</span>
+                      </p>
+                      <h3>피치니 메모로 엘리멘티 몬테풀치아노</h3>
+                      <p>Piccini Memoro Elementi Montepulciano</p>
+                      <p>
+                        이태리 국민와인 '메모로'를 한층 더 깊이 느낄 수 있는
+                        엘리멘티 시리즈
+                      </p>
+                      <span class="new_icon">NEW</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="wine_img">
+                        <img
+                          src="image/2025043012521467PPDV.jpg"
+                          alt="레드와인 피치니 메모로 엘리멘티 몬테풀치아노"
+                        />
+                      </div>
+                      <p class="nation nation6">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">레드와인</span>
+                      </p>
+                      <h3>피치니 메모로 엘리멘티 몬테풀치아노</h3>
+                      <p>Piccini Memoro Elementi Montepulciano</p>
+                      <p>
+                        이태리 국민와인 '메모로'를 한층 더 깊이 느낄 수 있는
+                        엘리멘티 시리즈
+                      </p>
+                      <span class="new_icon">NEW</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="wine_img">
+                        <img
+                          src="image/2025043012521467PPDV.jpg"
+                          alt="레드와인 피치니 메모로 엘리멘티 몬테풀치아노"
+                        />
+                      </div>
+                      <p class="nation nation6">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">레드와인</span>
+                      </p>
+                      <h3>피치니 메모로 엘리멘티 몬테풀치아노</h3>
+                      <p>Piccini Memoro Elementi Montepulciano</p>
+                      <p>
+                        이태리 국민와인 '메모로'를 한층 더 깊이 느낄 수 있는
+                        엘리멘티 시리즈
+                      </p>
+                      <span class="new_icon">NEW</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--//content-->
+
+            <div class="content">
+              <h2 class="h2_48 martop_wrap">위스키&스피릿</h2>
+              <p>총 <span class="cate_sy">38개</span>의 제품이 있습니다.</p>
+              <div class="wine_list">
+                <form action="" method="get">
+                  <select name="" id="">
+                    <option value="">주류 종류</option>
+                    <option value="">레드 와인</option>
+                    <option value="">화이트 와인</option>
+                    <option value="">로제 와인</option>
+                    <option value="">샴페인</option>
+                  </select>
+                  <select name="" id="">
+                    <option value="">생산국</option>
+                    <option value="">뉴질랜드</option>
+                    <option value="">미국</option>
+                    <option value="">스페인</option>
+                    <option value="">아르헨티나</option>
+                  </select>
+                </form>
+
+                <div class="w_search">
+                  <label for="wine_name" class="blind"
+                    >주류 이름을 입력하세요</label
+                  >
+                  <input
+                    type="text"
+                    id="wine_name"
+                    placeholder="주류 이름을 입력하세요"
+                  />
+                  <button type="button" class="w_search_btn">
+                    <span class="blind">검색</span>
+                  </button>
+                </div>
+              </div>
+              <!--wine_list-->
+
+              <div class="wine_item">
+                <ul>
+                  <li>
+                    <a href="">
+                      <div class="wine_img">
+                        <img
+                          src="image/20240109151046XBWQVK.jpg"
+                          alt="레드와인 피치니 메모로 엘리멘티 몬테풀치아노"
+                        />
+                      </div>
+                      <p class="nation nation6">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">레드와인</span>
+                      </p>
+                      <h3>국휘 베이지 준마이 다이긴죠</h3>
+                      <p>The Kokki BEIGE</p>
+                      <p>아름답게 수 놓인 이름, 국휘 사케</p>
+                      <span class="new_icon">NEW</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="wine_img">
+                        <img
+                          src="image/20240109151046XBWQVK.jpg"
+                          alt="레드와인 피치니 메모로 엘리멘티 몬테풀치아노"
+                        />
+                      </div>
+                      <p class="nation nation6">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">레드와인</span>
+                      </p>
+                      <h3>피치니 메모로 엘리멘티 몬테풀치아노</h3>
+                      <p>Piccini Memoro Elementi Montepulciano</p>
+                      <p>
+                        이태리 국민와인 '메모로'를 한층 더 깊이 느낄 수 있는
+                        엘리멘티 시리즈
+                      </p>
+                      <span class="new_icon">NEW</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="wine_img">
+                        <img
+                          src="image/20240109151046XBWQVK.jpg"
+                          alt="레드와인 피치니 메모로 엘리멘티 몬테풀치아노"
+                        />
+                      </div>
+                      <p class="nation nation6">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">레드와인</span>
+                      </p>
+                      <h3>피치니 메모로 엘리멘티 몬테풀치아노</h3>
+                      <p>Piccini Memoro Elementi Montepulciano</p>
+                      <p>
+                        이태리 국민와인 '메모로'를 한층 더 깊이 느낄 수 있는
+                        엘리멘티 시리즈
+                      </p>
+                      <span class="new_icon">NEW</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="wine_img">
+                        <img
+                          src="image/20240109151046XBWQVK.jpg"
+                          alt="레드와인 피치니 메모로 엘리멘티 몬테풀치아노"
+                        />
+                      </div>
+                      <p class="nation nation6">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">레드와인</span>
+                      </p>
+                      <h3>피치니 메모로 엘리멘티 몬테풀치아노</h3>
+                      <p>Piccini Memoro Elementi Montepulciano</p>
+                      <p>
+                        이태리 국민와인 '메모로'를 한층 더 깊이 느낄 수 있는
+                        엘리멘티 시리즈
+                      </p>
+                      <span class="new_icon">NEW</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="wine_img">
+                        <img
+                          src="image/20240109151046XBWQVK.jpg"
+                          alt="레드와인 피치니 메모로 엘리멘티 몬테풀치아노"
+                        />
+                      </div>
+                      <p class="nation nation6">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">레드와인</span>
+                      </p>
+                      <h3>피치니 메모로 엘리멘티 몬테풀치아노</h3>
+                      <p>Piccini Memoro Elementi Montepulciano</p>
+                      <p>
+                        이태리 국민와인 '메모로'를 한층 더 깊이 느낄 수 있는
+                        엘리멘티 시리즈
+                      </p>
+                      <span class="new_icon">NEW</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="wine_img">
+                        <img
+                          src="image/20240109151046XBWQVK.jpg"
+                          alt="레드와인 피치니 메모로 엘리멘티 몬테풀치아노"
+                        />
+                      </div>
+                      <p class="nation nation6">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">레드와인</span>
+                      </p>
+                      <h3>피치니 메모로 엘리멘티 몬테풀치아노</h3>
+                      <p>Piccini Memoro Elementi Montepulciano</p>
+                      <p>
+                        이태리 국민와인 '메모로'를 한층 더 깊이 느낄 수 있는
+                        엘리멘티 시리즈
+                      </p>
+                      <span class="new_icon">NEW</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--//content-->
+
+            <div class="content">
+              <h2 class="h2_48 martop_wrap">맥주&기타주류</h2>
+              <p>총 <span class="cate_sy">10개</span>개의 제품이 있습니다.</p>
+              <div class="wine_list">
+                <form action="" method="get">
+                  <select name="" id="">
+                    <option value="">주류 종류</option>
+                    <option value="">레드 와인</option>
+                    <option value="">화이트 와인</option>
+                    <option value="">로제 와인</option>
+                    <option value="">샴페인</option>
+                  </select>
+                  <select name="" id="">
+                    <option value="">생산국</option>
+                    <option value="">뉴질랜드</option>
+                    <option value="">미국</option>
+                    <option value="">스페인</option>
+                    <option value="">아르헨티나</option>
+                  </select>
+                </form>
+                <div class="w_search">
+                  <label for="wine_name" class="blind"
+                    >주류 이름을 입력하세요</label
+                  >
+                  <input
+                    type="text"
+                    id="wine_name"
+                    placeholder="주류 이름을 입력하세요"
+                  />
+                  <button type="button" class="w_search_btn">
+                    <span class="blind">검색</span>
+                  </button>
+                </div>
+              </div>
+              <!--wine_list-->
+
+              <div class="wine_item">
+                <ul>
+                  <li>
+                    <a href="">
+                      <div class="wine_img">
+                        <img
+                          src="image/20240827115321WB522F.jpg"
+                          alt="레드와인 피치니 메모로 엘리멘티 몬테풀치아노"
+                        />
+                      </div>
+                      <p class="nation nation6">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">레드와인</span>
+                      </p>
+                      <h3>무랄라</h3>
+                      <p>LA MURALLA</p>
+                      <p>
+                        부담없는 가격으로 즐기는 진한 몰트의 맛 노브랜드
+                        독점출시 제품
+                      </p>
+                      <span class="new_icon">NEW</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="wine_img">
+                        <img
+                          src="image/20240827115321WB522F.jpg"
+                          alt="레드와인 피치니 메모로 엘리멘티 몬테풀치아노"
+                        />
+                      </div>
+                      <p class="nation nation6">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">레드와인</span>
+                      </p>
+                      <h3>피치니 메모로 엘리멘티 몬테풀치아노</h3>
+                      <p>Piccini Memoro Elementi Montepulciano</p>
+                      <p>
+                        이태리 국민와인 '메모로'를 한층 더 깊이 느낄 수 있는
+                        엘리멘티 시리즈
+                      </p>
+                      <span class="new_icon">NEW</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="wine_img">
+                        <img
+                          src="image/20240827115321WB522F.jpg"
+                          alt="레드와인 피치니 메모로 엘리멘티 몬테풀치아노"
+                        />
+                      </div>
+                      <p class="nation nation6">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">레드와인</span>
+                      </p>
+                      <h3>피치니 메모로 엘리멘티 몬테풀치아노</h3>
+                      <p>Piccini Memoro Elementi Montepulciano</p>
+                      <p>
+                        이태리 국민와인 '메모로'를 한층 더 깊이 느낄 수 있는
+                        엘리멘티 시리즈
+                      </p>
+                      <span class="new_icon">NEW</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="wine_img">
+                        <img
+                          src="image/20240827115321WB522F.jpg"
+                          alt="레드와인 피치니 메모로 엘리멘티 몬테풀치아노"
+                        />
+                      </div>
+                      <p class="nation nation6">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">레드와인</span>
+                      </p>
+                      <h3>피치니 메모로 엘리멘티 몬테풀치아노</h3>
+                      <p>Piccini Memoro Elementi Montepulciano</p>
+                      <p>
+                        이태리 국민와인 '메모로'를 한층 더 깊이 느낄 수 있는
+                        엘리멘티 시리즈
+                      </p>
+                      <span class="new_icon">NEW</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="wine_img">
+                        <img
+                          src="image/20240827115321WB522F.jpg"
+                          alt="레드와인 피치니 메모로 엘리멘티 몬테풀치아노"
+                        />
+                      </div>
+                      <p class="nation nation6">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">레드와인</span>
+                      </p>
+                      <h3>피치니 메모로 엘리멘티 몬테풀치아노</h3>
+                      <p>Piccini Memoro Elementi Montepulciano</p>
+                      <p>
+                        이태리 국민와인 '메모로'를 한층 더 깊이 느낄 수 있는
+                        엘리멘티 시리즈
+                      </p>
+                      <span class="new_icon">NEW</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="wine_img">
+                        <img
+                          src="image/20240827115321WB522F.jpg"
+                          alt="레드와인 피치니 메모로 엘리멘티 몬테풀치아노"
+                        />
+                      </div>
+                      <p class="nation nation6">
+                        <span class="blind">이태리</span
+                        ><span class="w_sty01">레드와인</span>
+                      </p>
+                      <h3>피치니 메모로 엘리멘티 몬테풀치아노</h3>
+                      <p>Piccini Memoro Elementi Montepulciano</p>
+                      <p>
+                        이태리 국민와인 '메모로'를 한층 더 깊이 느낄 수 있는
+                        엘리멘티 시리즈
+                      </p>
+                      <span class="new_icon">NEW</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//content_wrap-->
+        </div>
+        <!--inner-->
+      </section>
+    </main>
+    <!--//main-->
+
+    <footer>
+      <div class="inner footer">
+        <p><img src="image/foot_logo.png" alt="footer logo" /></p>
+        <ul>
+          <li><a href="">Contact Us</a></li>
+          <li>
+            <a href="" class="fontsty"><strong>개인정보처리방침</strong></a>
+          </li>
+          <li>
+            <a href="" class="fontsty">영상정보처리기기 운영ㆍ관리방침</a>
+          </li>
+        </ul>
+        <address>
+          서울특별시 광진구 아차산로 563 (광장동) 대한제지㈜ 사옥 7층대표전화 :
+          02-727-1685
+          <small>&copy;2023Shinsegae L&B Ltd. All Rights Reserved.</small>
+        </address>
+        <div class="footerImg">
+          <p><img src="image/foot_img1.png" alt="가족친화 우수기업 마크" /></p>
+          <p><img src="image/foot_img2.png" alt="문화예술후원 우수기관" /></p>
+          <p>
+            <a href=""
+              ><img src="image/foot_img3.png" alt="한국웹표준 인증"
+            /></a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

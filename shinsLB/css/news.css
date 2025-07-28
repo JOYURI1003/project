@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+.news_list {
+  display: grid;
+  grid-template-columns: 56% auto auto;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.news_list input,
+.news_list select {
+  border: 0;
+  border-bottom: 2px solid #000;
+}
+.news_list p {
+  padding-top: 5px;
+}
+.pageArea {
+  justify-content: center;
+  align-items: center;
+}
+.pageArea .page {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+.pageArea .prev {
+  margin-right: 20px;
+  background-image: url(../image/icon_page_prev.png);
+}
+.pageArea .next {
+  margin-left: 20px;
+  background-image: url(../image/icon_page_next.png);
+}
+.num.on {
+  font-weight: bold;
+}
+.event_box > ul li {
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+/*문화상생*/
+
+.image_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.image_list h3 {
+  padding-top: 20px;
+  font-size: 20px;
+  color: #333;
+}
+.image_list p {
+  font-size: 16px;
+  color: #888;
+  margin: 10px 0 30px 0;
+  height: 2.8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+}
+
+/*about*/
+
+.section1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 40px;
+  padding-bottom: 60px;
+  background: #502e82;
+  color: #fff;
+  font-size: 1.125em;
+}
+.section1 .title {
+  width: 30%;
+}
+.section1 .list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 70%;
+  gap: 50px;
+}
+.section2 h3 {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.ion2_list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: stretch;
+  flex-wrap: wrap;
+  border-top: solid 1px #dcdcdc;
+  font-size: 1.125em;
+}
+.section2 dl {
+  padding: 40px 0;
+  border-bottom: solid 1px #dcdcdc;
+}
+.section2 dt,
+.section2 dd {
+  color: #333;
+  font-size: 18px;
+}
+.section2 dt {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.mb {
+  margin-bottom: 80px;
+}
