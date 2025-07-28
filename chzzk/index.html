@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>치지직</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/accordion.min.js"></script>
+    <script src="js/slick.js"></script>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+     <style>
+
+
+</style>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="hamburger_box">
+            <button id="hamburger"><img id="theme-image" src="image/light-img.gif" alt=""> </button>
+        </div>
+        <div class="Search d_fc">
+            <label for="search" class="blind">스트리머 게임, 게임, 영상 검색</label>
+            <input type="text" id="search" placeholder="스트리머 게임, 게임, 영상 검색">
+            <button type="submit">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.9"><path d="M15.8999 14.5L19.0862 17.7187" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="11.4302" cy="10.4819" r="5.35" stroke="currentColor" stroke-width="1.8"></circle></g></svg>
+                <span class="blind">검색</span></button>
+        </div>
+
+        <div class="sub_menu d_fc">
+            <p><a href="">스튜디오</a></p>
+            <ul class="d_fc">
+                <li>
+                    <a href="" title="치즈">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0_995_296243" maskUnits="userSpaceOnUse" x="0" y="27" width="40" height="8" style="mask-type: luminance;">
+                            <rect width="40" height="7" transform="matrix(1 0 0 -1 0 34.5)" fill="white"></rect></mask>
+                            <g mask="url(#mask0_995_296243)"><circle cx="20" cy="27.5" r="2.5" stroke="currentColor" stroke-width="2"></circle></g>
+                            <path d="M19.9981 9.5C24.1315 9.5 27.4953 12.4505 27.607 16.1281L27.6092 19.9952L28.9072 23.5441C29.2416 24.4586 28.6457 25.2 27.548 25.2H12.4483C11.3632 25.2 10.7569 24.4502 11.0925 23.5298L12.3854 19.9828L12.3864 16.1289L12.3934 16.0212C12.5663 12.3935 15.9049 9.5 19.9981 9.5Z" stroke="currentColor" stroke-width="2"></path></svg>
+                            <span class="blind">치즈</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M32 18.1535V19.1535C32.5523 19.1535 33 18.7057 33 18.1535H32ZM32 21.8458H33C33 21.2935 32.5523 20.8458 32 20.8458V21.8458ZM8 21.8458V20.8458C7.44772 20.8458 7 21.2935 7 21.8458H8ZM8 18.1535H7C7 18.7057 7.44772 19.1535 8 19.1535V18.1535ZM9.76842 11.615C8.23946 11.615 7 12.8545 7 14.3834H9C9 13.959 9.34403 13.615 9.76842 13.615V11.615ZM30.2316 11.615H9.76842V13.615H30.2316V11.615ZM33 14.3834C33 12.8545 31.7605 11.615 30.2316 11.615V13.615C30.656 13.615 31 13.959 31 14.3834H33ZM33 18.1535V14.3834H31V18.1535H33ZM31.1538 19.9996C31.1538 19.5323 31.5327 19.1535 32 19.1535V17.1535C30.4281 17.1535 29.1538 18.4277 29.1538 19.9996H31.1538ZM32 20.8458C31.5327 20.8458 31.1538 20.4669 31.1538 19.9996H29.1538C29.1538 21.5715 30.4281 22.8458 32 22.8458V20.8458ZM33 25.6158V21.8458H31V25.6158H33ZM30.2316 28.3842C31.7605 28.3842 33 27.1448 33 25.6158H31C31 26.0402 30.656 26.3842 30.2316 26.3842V28.3842ZM9.76842 28.3842H30.2316V26.3842H9.76842V28.3842ZM7 25.6158C7 27.1448 8.23946 28.3842 9.76842 28.3842V26.3842C9.34403 26.3842 9 26.0402 9 25.6158H7ZM7 21.8458V25.6158H9V21.8458H7ZM8.84615 19.9996C8.84615 20.4669 8.46732 20.8458 8 20.8458V22.8458C9.57189 22.8458 10.8462 21.5715 10.8462 19.9996H8.84615ZM8 19.1535C8.46732 19.1535 8.84615 19.5323 8.84615 19.9996H10.8462C10.8462 18.4277 9.57189 17.1535 8 17.1535V19.1535ZM7 14.3834V18.1535H9V14.3834H7Z" fill="currentColor"></path><rect width="2" height="3.69231" rx="1" transform="matrix(1 0 0 -1 14.4614 16.3073)" fill="currentColor"></rect><rect width="2" height="3.69231" rx="1" transform="matrix(1 0 0 -1 14.4614 27.3842)" fill="currentColor"></rect><rect width="2" height="3.69231" rx="1" transform="matrix(1 0 0 -1 14.4614 21.8458)" fill="currentColor"></rect></svg>
+                        <span class="blind">라운드티켓</span>
+                    </a>
+                </li>
+                <li><a href=""title>
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0_995_296243" maskUnits="userSpaceOnUse" x="0" y="27" width="40" height="8" style="mask-type: luminance;">
+                            <rect width="40" height="7" transform="matrix(1 0 0 -1 0 34.5)" fill="white"></rect></mask>
+                            <g mask="url(#mask0_995_296243)"><circle cx="20" cy="27.5" r="2.5" stroke="currentColor" stroke-width="2"></circle></g>
+                            <path d="M19.9981 9.5C24.1315 9.5 27.4953 12.4505 27.607 16.1281L27.6092 19.9952L28.9072 23.5441C29.2416 24.4586 28.6457 25.2 27.548 25.2H12.4483C11.3632 25.2 10.7569 24.4502 11.0925 23.5298L12.3854 19.9828L12.3864 16.1289L12.3934 16.0212C12.5663 12.3935 15.9049 9.5 19.9981 9.5Z" stroke="currentColor" stroke-width="2"></path></svg>
+                            <span class="blind">수신함</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="d_fc">
+                <li><a href="">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29.377 16.8995L28.377 16.8995L29.377 16.8995ZM22.377 9.89949V8.8995H22.377L22.377 9.89949ZM15.377 16.8995L16.377 16.8995L15.377 16.8995ZM16.2688 20.3211L16.9759 21.0282C17.2927 20.7113 17.3601 20.2224 17.1408 19.8316L16.2688 20.3211ZM10.0206 26.5693L9.31347 25.8622L10.0206 26.5693ZM19.1393 23.1074L19.6025 22.2211C19.2152 22.0187 18.7413 22.0912 18.4322 22.4003L19.1393 23.1074ZM28.377 16.8995C28.377 20.2132 25.6907 22.8995 22.377 22.8995V24.8995C26.7952 24.8995 30.377 21.3178 30.377 16.8995L28.377 16.8995ZM22.377 10.8995C25.6907 10.8995 28.377 13.5858 28.377 16.8995L30.377 16.8995C30.377 12.4812 26.7952 8.89949 22.377 8.8995V10.8995ZM16.377 16.8995C16.377 13.5858 19.0632 10.8995 22.377 10.8995L22.377 8.8995C17.9587 8.8995 14.377 12.4812 14.377 16.8995L16.377 16.8995ZM17.1408 19.8316C16.6546 18.9655 16.377 17.9664 16.377 16.8995L14.377 16.8995C14.377 18.3181 14.7471 19.6533 15.3968 20.8106L17.1408 19.8316ZM10.7277 27.2764L16.9759 21.0282L15.5616 19.614L9.31347 25.8622L10.7277 27.2764ZM10.7277 28.6906C10.3372 28.3001 10.3372 27.6669 10.7277 27.2764L9.31347 25.8622C8.1419 27.0338 8.1419 28.9332 9.31347 30.1048L10.7277 28.6906ZM12.1419 28.6906C11.7514 29.0811 11.1182 29.0811 10.7277 28.6906L9.31347 30.1048C10.485 31.2764 12.3845 31.2764 13.5561 30.1048L12.1419 28.6906ZM18.4322 22.4003L12.1419 28.6906L13.5561 30.1048L19.8464 23.8145L18.4322 22.4003ZM22.377 22.8995C21.3739 22.8995 20.4312 22.6542 19.6025 22.2211L18.6762 23.9937C19.7839 24.5726 21.0437 24.8995 22.377 24.8995V22.8995Z" fill="currentColor"></path><path d="M18.106 25.6142L17.3989 24.907L15.9847 26.3213L16.6918 27.0284L18.106 25.6142ZM17.9646 28.3012C18.3551 28.6917 18.9883 28.6917 19.3788 28.3012C19.7693 27.9106 19.7693 27.2775 19.3788 26.8869L17.9646 28.3012ZM16.6918 27.0284L17.9646 28.3012L19.3788 26.8869L18.106 25.6142L16.6918 27.0284Z" fill="currentColor"></path><path d="M15.3131 28.407L14.606 27.6999L13.1917 29.1141L13.8989 29.8212L15.3131 28.407ZM15.1716 31.094C15.5622 31.4845 16.1953 31.4845 16.5859 31.094C16.9764 30.7035 16.9764 30.0703 16.5859 29.6798L15.1716 31.094ZM13.8989 29.8212L15.1716 31.094L16.5859 29.6798L15.3131 28.407L13.8989 29.8212Z" fill="currentColor"></path><circle cx="22.3765" cy="14.9218" r="1.5" fill="currentColor"></circle></svg>
+                    <span class="blind">광고제거치트키</span>
+                </a>
+            </li>
+                <li><button id="toggle-mode"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 10.5C18.7402 11.7598 18.0325 13.4684 18.0325 15.25C18.0325 17.0316 18.7402 18.7402 20 20C21.2598 21.2598 22.9684 21.9675 24.75 21.9675C26.5316 21.9675 28.2402 21.2598 29.5 20C29.5 21.8789 28.9428 23.7156 27.899 25.2779C26.8551 26.8402 25.3714 28.0578 23.6355 28.7769C21.8996 29.4959 19.9895 29.684 18.1466 29.3175C16.3038 28.9509 14.6111 28.0461 13.2825 26.7175C11.9539 25.3889 11.0491 23.6962 10.6825 21.8534C10.316 20.0105 10.5041 18.1004 11.2231 16.3645C11.9422 14.6286 13.1598 13.1449 14.7221 12.101C16.2844 11.0572 18.1211 10.5 20 10.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></li>
+                <li><button type="button" class="use_menu">
+                    <img width="34" height="34" src="https://ssl.pstatic.net/cmstatic/nng/img/img_anonymous_square_gray_opacity2x.png?type=f120_120_na" alt="" >
+                </button></li>
+            </ul>
+        </div>
+    </div>
+</header><!--header-->
+
+
+<div class="menu_wrap">
+    <nav class="gnb">
+        <div class="gnb_roll">
+        
+        <section>
+            <h2 class="blind">주메뉴</h2>
+            <ul>
+                <li>
+                    <a href="">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="header_icon__8SHkt">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.611 7.11908C23.8044 7.26028 23.9188 7.48537 23.9188 7.72486V17.9768C23.9188 18.2163 23.8044 18.4413 23.611 18.5826C23.4176 18.7238 23.1683 18.7641 22.9402 18.6911L18.5714 17.2931C18.2608 17.1937 18.05 16.9049 18.05 16.5788V9.12285C18.05 8.79669 18.2608 8.50793 18.5714 8.40853L22.9402 7.01054C23.1683 6.93755 23.4176 6.97788 23.611 7.11908ZM19.55 9.67032V16.0313L22.4188 16.9493V8.75232L19.55 9.67032Z" fill="currentColor"></path>
+                            <path d="M9.9909 10.7164L13.5364 12.7634L9.9909 14.8103V10.7164ZM9.81362 14.9127C9.81369 14.9126 9.81376 14.9126 9.81384 14.9125L9.81362 14.9127Z" fill="currentColor" stroke="currentColor" stroke-width="1.18182"></path>
+                            <rect x="3.65" y="4.88635" width="15.0455" height="15.8727" rx="3.97727" stroke="currentColor" stroke-width="1.5"></rect>
+                        </svg>
+                        <span>전체방송</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" class="header_icon__8SHkt">
+                            <rect width="17.001" height="1.615" x="3.681" y="7.22" fill="currentColor" rx="0.808" transform="rotate(24.95 3.681 7.22)"></rect>
+                            <rect width="17.062" height="1.615" fill="currentColor" rx="0.808" transform="scale(1 -1) rotate(24.949 43.317 -.855)"></rect>
+                            <path stroke="currentColor" stroke-width="1.5" d="M21.55 18.384a3.47 3.47 0 1 1-6.94 0 3.47 3.47 0 0 1 6.94 0ZM21.55 7.22a3.47 3.47 0 1 1-6.94 0 3.47 3.47 0 0 1 6.94 0Z"></path>
+                        </svg>
+                        <span>인기클럽</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="header_icon__8SHkt">
+                            <rect x="5.04996" y="4.88635" width="6.5" height="6.5" rx="1.25" stroke="currentColor" stroke-width="1.5"></rect>
+                            <rect x="14.8818" y="4.83635" width="6.6" height="6.6" rx="1.3" stroke="currentColor" stroke-width="1.4"></rect>
+                            <rect x="14.9318" y="14.834" width="6.5" height="6.5" rx="1.25" stroke="currentColor" stroke-width="1.5"></rect>
+                            <rect x="5.04996" y="14.834" width="6.5" height="6.5" rx="1.25" stroke="currentColor" stroke-width="1.5"></rect>
+                        </svg>
+                        <span>카테고리</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" class="header_icon__8SHkt">
+                            <path stroke="currentColor" stroke-linejoin="round" stroke-width="1.5" d="M13.027 7.725C11.536 3.835 4 4.413 4 10.295c0 2.764 2.041 6.39 7.898 10.126.133.085.585.327 1.102.329.517.002.94-.226 1.055-.3C19.948 16.704 22 13.067 22 10.296c0-5.848-7.473-6.483-8.973-2.57Z"></path>
+                        </svg>
+                        <span>팔로잉</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="Picture_box">
+           
+            <h2 class="title">추천 채널</h2>
+            <ul class="Picture">
+                <li>
+                    <a href="">
+                        <div class="use_Picture">
+                            <img width="26" height="26" src="https://nng-phinf.pstatic.net/MjAyNDA5MDVfMTg4/MDAxNzI1NTQ2MDc0ODgy.e_buSTdT5OKfdnDbPBrQzzcNE_V1U5jaHAJpd6wi5y8g.Vn-Wml6UksrPcju8VqY22JTz-qSteK9_3jqR6sAGxZYg.JPEG/%EC%B9%98%EC%B9%98%EC%A7%81%ED%94%84%EB%A1%9C%ED%95%84.jpg?type=f120_120_na" alt="" >
+                        </div>
+                        <div class="use_box">
+                            <strong class="use_name">오단밍</strong>
+                            <span class="use_fan">드래곤볼 더 브레이커즈</span>
+                        </div>
+                        <span class="rank">619</span>
+                    </a>    
+                </li>
+                <li>
+                    <a href="">
+                        <div class="use_Picture">
+                            <img width="26" height="26" src="https://nng-phinf.pstatic.net/MjAyNDA5MDVfMTg4/MDAxNzI1NTQ2MDc0ODgy.e_buSTdT5OKfdnDbPBrQzzcNE_V1U5jaHAJpd6wi5y8g.Vn-Wml6UksrPcju8VqY22JTz-qSteK9_3jqR6sAGxZYg.JPEG/%EC%B9%98%EC%B9%98%EC%A7%81%ED%94%84%EB%A1%9C%ED%95%84.jpg?type=f120_120_na" alt="" >
+                        </div>
+                        <div class="use_box">
+                            <strong class="use_name">오단밍</strong>
+                            <span class="use_fan">드래곤볼 더 브레이커즈</span>
+                        </div>
+                        <span class="rank">619</span>
+                    </a>    
+                </li>
+                <li>
+                    <a href="">
+                        <div class="use_Picture">
+                            <img width="26" height="26" src="https://nng-phinf.pstatic.net/MjAyNDA5MDVfMTg4/MDAxNzI1NTQ2MDc0ODgy.e_buSTdT5OKfdnDbPBrQzzcNE_V1U5jaHAJpd6wi5y8g.Vn-Wml6UksrPcju8VqY22JTz-qSteK9_3jqR6sAGxZYg.JPEG/%EC%B9%98%EC%B9%98%EC%A7%81%ED%94%84%EB%A1%9C%ED%95%84.jpg?type=f120_120_na" alt="" >
+                        </div>
+                        <div class="use_box">
+                            <strong class="use_name">지수소녀99</strong>
+                            <span class="use_fan">드래곤볼 더 브레이커즈</span>
+                        </div>
+                        <span class="rank">619</span>
+                    </a>    
+                </li>
+                <li>
+                    <a href="">
+                        <div class="use_Picture">
+                            <img width="26" height="26" src="https://nng-phinf.pstatic.net/MjAyNDA5MDVfMTg4/MDAxNzI1NTQ2MDc0ODgy.e_buSTdT5OKfdnDbPBrQzzcNE_V1U5jaHAJpd6wi5y8g.Vn-Wml6UksrPcju8VqY22JTz-qSteK9_3jqR6sAGxZYg.JPEG/%EC%B9%98%EC%B9%98%EC%A7%81%ED%94%84%EB%A1%9C%ED%95%84.jpg?type=f120_120_na" alt="" >
+                        </div>
+                        <div class="use_box">
+                            <strong class="use_name">아이세 테라</strong>
+                            <span class="use_fan">드래곤볼 더 브레이커즈</span>
+                        </div>
+                        <span class="rank">619</span>
+                    </a>    
+                </li>
+            </ul>
+
+            <details>
+                    <summary><span class="blind">더보기</span></summary>
+            <ul>
+                <li>
+                    <a href="">
+                        <div class="use_Picture">
+                            <img width="26" height="26" src="https://nng-phinf.pstatic.net/MjAyNDA5MDVfMTg4/MDAxNzI1NTQ2MDc0ODgy.e_buSTdT5OKfdnDbPBrQzzcNE_V1U5jaHAJpd6wi5y8g.Vn-Wml6UksrPcju8VqY22JTz-qSteK9_3jqR6sAGxZYg.JPEG/%EC%B9%98%EC%B9%98%EC%A7%81%ED%94%84%EB%A1%9C%ED%95%84.jpg?type=f120_120_na" alt="" >
+                        </div>
+                        <div class="use_box">
+                            <strong class="use_name">방구르르릉</strong>
+                            <span class="use_fan">드래곤볼 더 브레이커즈</span>
+                        </div>
+                        <span class="rank">619</span>
+                    </a>    
+                </li>
+                <li>
+                    <a href="">
+                        <div class="use_Picture">
+                            <img width="26" height="26" src="https://nng-phinf.pstatic.net/MjAyNDA5MDVfMTg4/MDAxNzI1NTQ2MDc0ODgy.e_buSTdT5OKfdnDbPBrQzzcNE_V1U5jaHAJpd6wi5y8g.Vn-Wml6UksrPcju8VqY22JTz-qSteK9_3jqR6sAGxZYg.JPEG/%EC%B9%98%EC%B9%98%EC%A7%81%ED%94%84%EB%A1%9C%ED%95%84.jpg?type=f120_120_na" alt="" >
+                        </div>
+                        <div class="use_box">
+                            <strong class="use_name">방구르르릉</strong>
+                            <span class="use_fan">전략적 팀 전투: 사이버 시티</span>
+                        </div>
+                        <span class="rank">619</span>
+                    </a>    
+                </li>
+                <li>
+                    <a href="">
+                        <div class="use_Picture">
+                            <img width="26" height="26" src="https://nng-phinf.pstatic.net/MjAyNDA5MDVfMTg4/MDAxNzI1NTQ2MDc0ODgy.e_buSTdT5OKfdnDbPBrQzzcNE_V1U5jaHAJpd6wi5y8g.Vn-Wml6UksrPcju8VqY22JTz-qSteK9_3jqR6sAGxZYg.JPEG/%EC%B9%98%EC%B9%98%EC%A7%81%ED%94%84%EB%A1%9C%ED%95%84.jpg?type=f120_120_na" alt="" >
+                        </div>
+                        <div class="use_box">
+                            <strong class="use_name">방구르르릉</strong>
+                            <span class="use_fan">드래곤볼 더 브레이커즈</span>
+                        </div>
+                        <span class="rank">619</span>
+                    </a>    
+                </li>
+                <li>
+                    <a href="">
+                        <div class="use_Picture">
+                            <img width="26" height="26" src="https://nng-phinf.pstatic.net/MjAyNDA5MDVfMTg4/MDAxNzI1NTQ2MDc0ODgy.e_buSTdT5OKfdnDbPBrQzzcNE_V1U5jaHAJpd6wi5y8g.Vn-Wml6UksrPcju8VqY22JTz-qSteK9_3jqR6sAGxZYg.JPEG/%EC%B9%98%EC%B9%98%EC%A7%81%ED%94%84%EB%A1%9C%ED%95%84.jpg?type=f120_120_na" alt="" >
+                        </div>
+                        <div class="use_box">
+                            <strong class="use_name">방구르르릉</strong>
+                            <span class="use_fan">드래곤볼 더 브레이커즈</span>
+                        </div>
+                        <span class="rank">619</span>
+                    </a>    
+                </li>
+                </details>
+            </ul>
+        </section>
+     
+        <section class="Partner_box">
+            <h2 class="title txt1">파트너</h2>
+            <ul>
+                <li>
+                    <a href="">
+                        <div class="use_Picture">
+                            <img width="26" height="26" src="https://nng-phinf.pstatic.net/MjAyNDA5MDVfMTg4/MDAxNzI1NTQ2MDc0ODgy.e_buSTdT5OKfdnDbPBrQzzcNE_V1U5jaHAJpd6wi5y8g.Vn-Wml6UksrPcju8VqY22JTz-qSteK9_3jqR6sAGxZYg.JPEG/%EC%B9%98%EC%B9%98%EC%A7%81%ED%94%84%EB%A1%9C%ED%95%84.jpg?type=f120_120_na" alt="" >
+                        </div>
+                        <p><span class="use_fan">망내</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="use_Picture">
+                            <img width="26" height="26" src="https://nng-phinf.pstatic.net/MjAyNDA5MDVfMTg4/MDAxNzI1NTQ2MDc0ODgy.e_buSTdT5OKfdnDbPBrQzzcNE_V1U5jaHAJpd6wi5y8g.Vn-Wml6UksrPcju8VqY22JTz-qSteK9_3jqR6sAGxZYg.JPEG/%EC%B9%98%EC%B9%98%EC%A7%81%ED%94%84%EB%A1%9C%ED%95%84.jpg?type=f120_120_na" alt="" >
+                        </div>
+                        <p><span class="use_fan">잇다</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="use_Picture">
+                            <img width="26" height="26" src="https://nng-phinf.pstatic.net/MjAyNDA5MDVfMTg4/MDAxNzI1NTQ2MDc0ODgy.e_buSTdT5OKfdnDbPBrQzzcNE_V1U5jaHAJpd6wi5y8g.Vn-Wml6UksrPcju8VqY22JTz-qSteK9_3jqR6sAGxZYg.JPEG/%EC%B9%98%EC%B9%98%EC%A7%81%ED%94%84%EB%A1%9C%ED%95%84.jpg?type=f120_120_na" alt="" >
+                        </div>
+                        <p><span class="use_fan">햇살살</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="use_Picture">
+                            <img width="26" height="26" src="https://nng-phinf.pstatic.net/MjAyNDA5MDVfMTg4/MDAxNzI1NTQ2MDc0ODgy.e_buSTdT5OKfdnDbPBrQzzcNE_V1U5jaHAJpd6wi5y8g.Vn-Wml6UksrPcju8VqY22JTz-qSteK9_3jqR6sAGxZYg.JPEG/%EC%B9%98%EC%B9%98%EC%A7%81%ED%94%84%EB%A1%9C%ED%95%84.jpg?type=f120_120_na" alt="" >
+                        </div>
+                        <p><span class="use_fan">캔테리우스</span></p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2 class="titlehd txt2">서비스</h2>
+            <ul>
+                <li><a href="">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5.04996" y="4.51138" width="6.5" height="6.5" rx="1.25" stroke="currentColor" stroke-width="1.5"></rect><rect x="4.74997" y="14.2501" width="7.1" height="7.1" rx="3.55" stroke="currentColor" stroke-width="1.5"></rect><path d="M21.4169 10.9503H14.983C14.7933 10.9503 14.6727 10.7474 14.7634 10.5808L17.9804 4.67212C18.0751 4.49818 18.3248 4.49818 18.4195 4.67212L19.0782 4.31349L18.4195 4.67212L21.6365 10.5808C21.7272 10.7474 21.6066 10.9503 21.4169 10.9503Z" stroke="currentColor" stroke-width="1.5"></path><path d="M15.3999 14.8004L21.3994 20.8004" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path><path d="M21.3997 14.8003L15.4002 20.8002" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg>
+                    <span class="txt3"> 게임</span></a></li>
+                <li><a href="">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_9131_73407)"><path d="M1.93173 10.0456C1.93173 8.72498 2.32016 7.94092 2.93169 7.45813C3.57996 6.94634 4.6187 6.65924 6.14537 6.65924H7.52264V13.432H6.14537C4.86785 13.432 3.81726 13.279 3.09515 12.8131C2.44483 12.3936 1.93173 11.6316 1.93173 10.0456Z" stroke="currentColor" stroke-width="1.5"></path></g><g clip-path="url(#clip1_9131_73407)"><path d="M24.0681 10.0453C24.0681 11.366 23.6797 12.15 23.0682 12.6328C22.4199 13.1446 21.3812 13.4317 19.8545 13.4317L18.4772 13.4317L18.4772 6.65897L19.8545 6.65897C21.132 6.65897 22.1826 6.81195 22.9047 7.27783C23.555 7.69739 24.0681 8.45932 24.0681 10.0453Z" stroke="currentColor" stroke-width="1.5"></path></g><path d="M10.0454 22.2857H15.9545" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path><path d="M18.6647 5.15915H7.33526C6.55298 5.15915 5.91882 5.79331 5.91882 6.57559V12.2403C5.91882 16.1511 9.08917 19.3215 13 19.3215C16.9108 19.3215 20.0812 16.1511 20.0812 12.2403V6.57559C20.0812 5.79331 19.447 5.15915 18.6647 5.15915Z" stroke="currentColor" stroke-width="1.5"></path><defs><clipPath id="clip0_9131_73407"><rect width="4.72727" height="8.27273" fill="white" transform="translate(1.18173 5.90924)"></rect></clipPath><clipPath id="clip1_9131_73407"><rect width="4.72727" height="8.27273" fill="white" transform="translate(20.0909 5.90909)"></rect></clipPath></defs></svg>
+                    <span>e 스포츠</span></a></li>
+                <li><a href="">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="9" stroke="currentColor" stroke-width="1.5"></circle><path d="M8.89454 12.0289L10.117 15.1725C10.1469 15.2494 10.221 15.3 10.3034 15.3H15.6965C15.779 15.3 15.853 15.2494 15.8829 15.1725L17.1054 12.0289C17.1431 11.932 17.0261 11.849 16.9471 11.9167L15.125 13.4786L13.0839 10.3295C13.0445 10.2687 12.9555 10.2687 12.9161 10.3295L10.875 13.4786L9.05282 11.9167C8.97383 11.849 8.85684 11.932 8.89454 12.0289Z" fill="currentColor" stroke="currentColor" stroke-linecap="round"></path></svg>
+                    <span class="txt4"> 시리즈</span></a></li>
+                <li><a href="">
+                    <span><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" ><path d="M6.54501 4.29541H18.545C19.7877 4.29541 20.795 5.30277 20.795 6.54541V13.5454C20.795 14.7881 19.7877 15.7954 18.545 15.7954H6.54501C5.30237 15.7954 4.29501 14.788 4.29501 13.5454V6.54541C4.29501 5.30277 5.30237 4.29541 6.54501 4.29541Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path><path d="M9 19.9998H17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg>
+                    <span>PC 게임</span></a></li>
+                <li><a href="">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.2562 16.5455V14.7001H13.3917L16.5455 10.488H13.9899L14.7638 9.45456H12.2082L10.0961 12.2755H12.6517L9.45456 16.5455H16.2562Z" fill="currentColor"></path><rect x="4.29544" y="4.29529" width="17.4091" height="17.4091" rx="8.70455" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></rect></svg>
+                    <span>치지직 라운지</span></a></li>
+            </ul>
+        </section>
+    </div>
+    </nav>
+
+    <main>
+        <section>
+           <div class="top_banner">
+            <ul class="top_bnBox autoplay">
+                <li class="bnBox img img1">
+                    <a href="">
+                        <strong>치지직 모션스테이지 OPEN!</strong>
+                        <p>6월 예약 신청 접수 시작</p>
+                        <span>5/12 (월) ~ 5/18 (일)</span>
+                    </a>
+                </li>
+                 <li class="bnBox img img1">
+                    <a href="">
+                        <strong>치지직 모션스테이지 OPEN!</strong>
+                        <p>6월 예약 신청 접수 시작</p>
+                        <span>5/12 (월) ~ 5/18 (일)</span>
+                    </a>
+                </li>
+                 <li class="bnBox img img3">
+                    <a href="">
+                        <strong>치지직 모션스테이지 OPEN!</strong>
+                        <p>6월 예약 신청 접수 시작</p>
+                        <span>5/12 (월) ~ 5/18 (일)</span>
+                    </a>
+                </li>
+                 <li class="bnBox img img3">
+                    <a href="">
+                        <strong>치지직 모션스테이지 OPEN!</strong>
+                        <p>6월 예약 신청 접수 시작</p>
+                        <span>5/12 (월) ~ 5/18 (일)</span>
+                    </a>
+                </li>
+                 <li class="bnBox img img4">
+                    <a href="">
+                        <strong>치지직 모션스테이지 OPEN!</strong>
+                        <p>6월 예약 신청 접수 시작</p>
+                        <span>5/12 (월) ~ 5/18 (일)</span>
+                    </a>
+                </li>
+                 <li class="bnBox img img4">
+                    <a href="">
+                        <strong>치지직 모션스테이지 OPEN!</strong>
+                        <p>6월 예약 신청 접수 시작</p>
+                        <span>5/12 (월) ~ 5/18 (일)</span>
+                    </a>
+                </li>
+                  <li class="bnBox img img5">
+                    <a href="">
+                        <strong>치지직 모션스테이지 OPEN!</strong>
+                        <p>6월 예약 신청 접수 시작</p>
+                        <span>5/12 (월) ~ 5/18 (일)</span>
+                    </a>
+                </li>
+                 <li class="bnBox img img5">
+                    <a href="">
+                        <strong>치지직 모션스테이지 OPEN!</strong>
+                        <p>6월 예약 신청 접수 시작</p>
+                        <span>5/12 (월) ~ 5/18 (일)</span>
+                    </a>
+                </li>
+            </ul>
+           </div>
+        </section>
+
+        <section class="accordion_box">
+            <ul class="accordion">
+                <li>
+                    <a href="">
+                        <img alt="" src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/30327224/live/12011786/record/39613314/thumbnail/image_480.jpg?date=1747106790000">
+                        <span class="live_icon">Live</span>
+                        <span class="count">39명</span>
+                        <div class="acco_box">
+                            <p class="acco_svg"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18" fill="none" class="home_recommend_live_icon_play__kLmzQ"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 1.81445C10 1.26217 10.4477 0.814453 11 0.814453C11.5523 0.814453 12 1.26217 12 1.81445V4.81445H15.5C19.0898 4.81445 22 7.7246 22 11.3145C22 14.9043 19.0899 17.8145 15.5 17.8145H6.5C2.91015 17.8145 0 14.9043 0 11.3145C0 7.7246 2.91015 4.81445 6.5 4.81445H10V1.81445ZM14.8199 7.90961C14.2124 7.90961 13.7208 8.40193 13.7208 9.00875C13.7208 9.61544 14.2125 10.1077 14.8199 10.1077C15.4264 10.1077 15.9189 9.61566 15.9189 9.00875C15.9189 8.40178 15.4267 7.90961 14.8199 7.90961ZM16.9168 10.0067C16.3097 10.0067 15.818 10.4986 15.818 11.1055C15.818 11.7124 16.3095 12.2048 16.9168 12.2048C17.5239 12.2048 18.0161 11.7125 18.0161 11.1055C18.0161 10.4984 17.5239 10.0067 16.9168 10.0067ZM14.8199 12.1038C14.2125 12.1038 13.7208 12.596 13.7208 13.2028C13.7208 13.8097 14.2125 14.3019 14.8199 14.3019C15.4264 14.3019 15.9189 13.8099 15.9189 13.2028C15.9189 12.5959 15.4267 12.1038 14.8199 12.1038ZM12.7227 10.0067C12.1159 10.0067 11.6238 10.4985 11.6238 11.1055C11.6238 11.7126 12.1157 12.2048 12.7227 12.2048C13.3302 12.2048 13.8218 11.7123 13.8218 11.1055C13.8218 10.4985 13.3299 10.0067 12.7227 10.0067ZM9.92691 11.4553C9.92691 11.6461 9.76823 11.8048 9.57739 11.8048H7.82981V13.5524C7.82981 13.7427 7.67087 13.9019 7.4803 13.9019H6.78127C6.59043 13.9019 6.43175 13.7427 6.43175 13.5524V11.8048H4.68417C4.49386 11.8048 4.33466 11.6461 4.33466 11.4553V10.7562C4.33466 10.5654 4.49386 10.4067 4.68417 10.4067H6.43175V8.61939C6.43175 8.42882 6.59043 8.30962 6.78127 8.30962H7.4803C7.67087 8.30962 7.82981 8.42882 7.82981 8.61939V10.4067H9.57739C9.76823 10.4067 9.92691 10.5654 9.92691 10.7562V11.4553Z" fill="currentColor"></path></svg>
+                            <span class="blind">카테고리</span>게임</p>
+                            <p class="acco_title">레포 업데이트 솔플 체험기</p>
+                            <p><span class="acco_use">사이네코 코나타 Wishing</span> </p>
+                        </div>
+                    </a>
+                </li>
+                <li> 
+                   <a href="">
+                        <img  alt="" src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/29299633/live/12253045/record/40175795/thumbnail/image_480.jpg?date=1747110570000">
+                        <span class="live_icon">Live</span>
+                        <span class="count">39명</span>
+                        <div class="acco_box">
+                            <p class="acco_svg"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18" fill="none" class="home_recommend_live_icon_play__kLmzQ"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 1.81445C10 1.26217 10.4477 0.814453 11 0.814453C11.5523 0.814453 12 1.26217 12 1.81445V4.81445H15.5C19.0898 4.81445 22 7.7246 22 11.3145C22 14.9043 19.0899 17.8145 15.5 17.8145H6.5C2.91015 17.8145 0 14.9043 0 11.3145C0 7.7246 2.91015 4.81445 6.5 4.81445H10V1.81445ZM14.8199 7.90961C14.2124 7.90961 13.7208 8.40193 13.7208 9.00875C13.7208 9.61544 14.2125 10.1077 14.8199 10.1077C15.4264 10.1077 15.9189 9.61566 15.9189 9.00875C15.9189 8.40178 15.4267 7.90961 14.8199 7.90961ZM16.9168 10.0067C16.3097 10.0067 15.818 10.4986 15.818 11.1055C15.818 11.7124 16.3095 12.2048 16.9168 12.2048C17.5239 12.2048 18.0161 11.7125 18.0161 11.1055C18.0161 10.4984 17.5239 10.0067 16.9168 10.0067ZM14.8199 12.1038C14.2125 12.1038 13.7208 12.596 13.7208 13.2028C13.7208 13.8097 14.2125 14.3019 14.8199 14.3019C15.4264 14.3019 15.9189 13.8099 15.9189 13.2028C15.9189 12.5959 15.4267 12.1038 14.8199 12.1038ZM12.7227 10.0067C12.1159 10.0067 11.6238 10.4985 11.6238 11.1055C11.6238 11.7126 12.1157 12.2048 12.7227 12.2048C13.3302 12.2048 13.8218 11.7123 13.8218 11.1055C13.8218 10.4985 13.3299 10.0067 12.7227 10.0067ZM9.92691 11.4553C9.92691 11.6461 9.76823 11.8048 9.57739 11.8048H7.82981V13.5524C7.82981 13.7427 7.67087 13.9019 7.4803 13.9019H6.78127C6.59043 13.9019 6.43175 13.7427 6.43175 13.5524V11.8048H4.68417C4.49386 11.8048 4.33466 11.6461 4.33466 11.4553V10.7562C4.33466 10.5654 4.49386 10.4067 4.68417 10.4067H6.43175V8.61939C6.43175 8.42882 6.59043 8.30962 6.78127 8.30962H7.4803C7.67087 8.30962 7.82981 8.42882 7.82981 8.61939V10.4067H9.57739C9.76823 10.4067 9.92691 10.5654 9.92691 10.7562V11.4553Z" fill="currentColor"></path></svg>
+                            <span class="blind">카테고리</span>하스스톤</p>
+                            <p class="acco_title">세상이 어두워지고 조용히 비가 내리면 여전히 그대로</p>
+                            <p><span class="acco_use">치킨쿤</span> </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img  alt="" src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/35054538/live/12252594/record/40175243/thumbnail/image_480.jpg?date=1747110570000">
+                        <span class="live_icon">Live</span>
+                        <span class="count">39명</span>
+                        <div class="acco_box">
+                            <p class="acco_svg"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18" fill="none" class="home_recommend_live_icon_play__kLmzQ"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 1.81445C10 1.26217 10.4477 0.814453 11 0.814453C11.5523 0.814453 12 1.26217 12 1.81445V4.81445H15.5C19.0898 4.81445 22 7.7246 22 11.3145C22 14.9043 19.0899 17.8145 15.5 17.8145H6.5C2.91015 17.8145 0 14.9043 0 11.3145C0 7.7246 2.91015 4.81445 6.5 4.81445H10V1.81445ZM14.8199 7.90961C14.2124 7.90961 13.7208 8.40193 13.7208 9.00875C13.7208 9.61544 14.2125 10.1077 14.8199 10.1077C15.4264 10.1077 15.9189 9.61566 15.9189 9.00875C15.9189 8.40178 15.4267 7.90961 14.8199 7.90961ZM16.9168 10.0067C16.3097 10.0067 15.818 10.4986 15.818 11.1055C15.818 11.7124 16.3095 12.2048 16.9168 12.2048C17.5239 12.2048 18.0161 11.7125 18.0161 11.1055C18.0161 10.4984 17.5239 10.0067 16.9168 10.0067ZM14.8199 12.1038C14.2125 12.1038 13.7208 12.596 13.7208 13.2028C13.7208 13.8097 14.2125 14.3019 14.8199 14.3019C15.4264 14.3019 15.9189 13.8099 15.9189 13.2028C15.9189 12.5959 15.4267 12.1038 14.8199 12.1038ZM12.7227 10.0067C12.1159 10.0067 11.6238 10.4985 11.6238 11.1055C11.6238 11.7126 12.1157 12.2048 12.7227 12.2048C13.3302 12.2048 13.8218 11.7123 13.8218 11.1055C13.8218 10.4985 13.3299 10.0067 12.7227 10.0067ZM9.92691 11.4553C9.92691 11.6461 9.76823 11.8048 9.57739 11.8048H7.82981V13.5524C7.82981 13.7427 7.67087 13.9019 7.4803 13.9019H6.78127C6.59043 13.9019 6.43175 13.7427 6.43175 13.5524V11.8048H4.68417C4.49386 11.8048 4.33466 11.6461 4.33466 11.4553V10.7562C4.33466 10.5654 4.49386 10.4067 4.68417 10.4067H6.43175V8.61939C6.43175 8.42882 6.59043 8.30962 6.78127 8.30962H7.4803C7.67087 8.30962 7.82981 8.42882 7.82981 8.61939V10.4067H9.57739C9.76823 10.4067 9.92691 10.5654 9.92691 10.7562V11.4553Z" fill="currentColor"></path></svg>
+                            <span class="blind">카테고리</span>마비노기 모바일</p>
+                            <p class="acco_title">데미안 서버 궁수 팝포키</p>
+                            <p><span class="acco_use">팝포키</span> </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    <img alt="" src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27737670/live/12252549/record/40175181/thumbnail/image_480.jpg?date=1747110570000">
+                    <span class="live_icon">Live</span>
+                    <span class="count">39명</span>
+                    <div class="acco_box">
+                        <p class="acco_svg"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18" fill="none" class="home_recommend_live_icon_play__kLmzQ"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 1.81445C10 1.26217 10.4477 0.814453 11 0.814453C11.5523 0.814453 12 1.26217 12 1.81445V4.81445H15.5C19.0898 4.81445 22 7.7246 22 11.3145C22 14.9043 19.0899 17.8145 15.5 17.8145H6.5C2.91015 17.8145 0 14.9043 0 11.3145C0 7.7246 2.91015 4.81445 6.5 4.81445H10V1.81445ZM14.8199 7.90961C14.2124 7.90961 13.7208 8.40193 13.7208 9.00875C13.7208 9.61544 14.2125 10.1077 14.8199 10.1077C15.4264 10.1077 15.9189 9.61566 15.9189 9.00875C15.9189 8.40178 15.4267 7.90961 14.8199 7.90961ZM16.9168 10.0067C16.3097 10.0067 15.818 10.4986 15.818 11.1055C15.818 11.7124 16.3095 12.2048 16.9168 12.2048C17.5239 12.2048 18.0161 11.7125 18.0161 11.1055C18.0161 10.4984 17.5239 10.0067 16.9168 10.0067ZM14.8199 12.1038C14.2125 12.1038 13.7208 12.596 13.7208 13.2028C13.7208 13.8097 14.2125 14.3019 14.8199 14.3019C15.4264 14.3019 15.9189 13.8099 15.9189 13.2028C15.9189 12.5959 15.4267 12.1038 14.8199 12.1038ZM12.7227 10.0067C12.1159 10.0067 11.6238 10.4985 11.6238 11.1055C11.6238 11.7126 12.1157 12.2048 12.7227 12.2048C13.3302 12.2048 13.8218 11.7123 13.8218 11.1055C13.8218 10.4985 13.3299 10.0067 12.7227 10.0067ZM9.92691 11.4553C9.92691 11.6461 9.76823 11.8048 9.57739 11.8048H7.82981V13.5524C7.82981 13.7427 7.67087 13.9019 7.4803 13.9019H6.78127C6.59043 13.9019 6.43175 13.7427 6.43175 13.5524V11.8048H4.68417C4.49386 11.8048 4.33466 11.6461 4.33466 11.4553V10.7562C4.33466 10.5654 4.49386 10.4067 4.68417 10.4067H6.43175V8.61939C6.43175 8.42882 6.59043 8.30962 6.78127 8.30962H7.4803C7.67087 8.30962 7.82981 8.42882 7.82981 8.61939V10.4067H9.57739C9.76823 10.4067 9.92691 10.5654 9.92691 10.7562V11.4553Z" fill="currentColor"></path></svg>
+                        <span class="blind">카테고리</span>명조 : 웨더링 웨이브</p>
+                        <p class="acco_title">명조 하는 중</p>
+                        <p><span class="acco_use">냥냉뇽</span> </p>
+                    </div>
+                </a>
+                </li>
+            </ul>
+          
+        </section>
+
+        <div class="add_box">
+            <img src="https://ssl.pstatic.net/melona/libs/1494/1494293/2d7321d9f29415f25bed_20250411135418456.png" height="80" alt="[광고]무한도전 X 치지직 실시간 라이브 스트리밍 중">
+        </div>
+        <section class="container_wrap">
+            <h2>디지몬 같이보기</h2>
+
+            <ul class="container_box">
+                <li class="content_list">
+                  
+                    <div class="content_imgBox">
+                        <a href="">
+                            <img width="100%" height="100%" alt="" src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/30327224/live/12011786/record/39613314/thumbnail/image_480.jpg?date=1747106790000">
+                            <span class="live_icon">Live</span>
+                            <span class="count">39명</span>
+                        </a>
+                    </div><!--//content_imgBox-->    
+                    
+                    
+                    <div class="content_titleBox">
+                        <div class="use_icon">
+                            <img width="40" height="40" src="https://nng-phinf.pstatic.net/MjAyNDA2MDZfMjM4/MDAxNzE3NjQxNDY2ODA5.9wUbzduL4AoSvbBStjM_bmz7KOOEAPO3qiQ7fW6_9Nkg.YBa7AvmnW64xKRfSYO_xtCAK4yIK8wbFGhUbfDAKsb0g.JPEG/%EC%86%8C%EB%9D%BC%ED%98%B8%EC%8B%9C_%EC%B9%B4%EB%A0%8C_%EC%9C%A0%ED%8A%9C%EB%B8%8C_%ED%94%84%EB%A1%9C%ED%95%84.jpg?type=f120_120_na" alt="" draggable="false">
+                        </div>
+                        <div>
+                            <h3 class="titleH3">가자, 디지몬 세계로! 🚀 애니메이션 '디지몬 어드벤쳐 1기' 무한 스트리밍 밤새 같이 보자!</h3>
+                            <p class="cont_useName"><a href="" title="스트리머 채널로 이동">소라호시 카렌</a></p>
+                             <div class="cont_tag">
+                                <a href=""><span class="tag_txt01">같이보기</span></a>
+                                <a href=""><span class="tag_txt01">디지몬</span></a>
+                                <a href=""><span class="tag_txt02">애니메이션</span></a>
+                                <a href=""><span class="tag_txt02">talk</span></a>
+                            </div>
+                        </div>
+                    </div><!--content_titleBox-->    
+                </li>
+                   <li class="content_list">
+                  
+                    <div class="content_imgBox">
+                        <a href="">
+                            <img width="100%" height="100%" alt="" src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/29299633/live/12253045/record/40175795/thumbnail/image_480.jpg?date=1747110570000">
+                            <span class="live_icon">Live</span>
+                            <span class="count">39명</span>
+                        </a>
+                    </div><!--//content_imgBox-->    
+                    
+                    
+                    <div class="content_titleBox">
+                        <div class="use_icon">
+                            <img width="40" height="40" src="https://nng-phinf.pstatic.net/MjAyNDA2MDZfODQg/MDAxNzE3NjQwNjYxNTQ0.bA1O7rGx8ybzay9O3wYt1ONoxKRQEekAJPndg4lOTygg.dx3troxnTFvtBPOa9GKDtERnrKQ2PYnilYFjxgHV6P4g.PNG/%EC%A0%9C%EB%AA%A9_%EC%97%86%EC%9D%8C-1.png?type=f120_120_na" alt="" draggable="false">
+                        </div>
+                        <div>
+                            <h3 class="titleH3">가자, 디지몬 세계로! 🚀 애니메이션 '디지몬 어드벤쳐 1기' 무한 스트리밍</h3>
+                            <p class="cont_useName"><a href="" title="스트리머 채널로 이동">사메모메</a></p>
+                             <div class="cont_tag">
+                                <a href=""><span class="tag_txt01">같이보기</span></a>
+                                <a href=""><span class="tag_txt01">디지몬</span></a>
+                                <a href=""><span class="tag_txt02">애니메이션</span></a>
+                                <a href=""><span class="tag_txt02">talk</span></a>
+                            </div>
+                        </div>
+                    </div><!--content_titleBox-->    
+                </li>
+                   <li class="content_list">
+                  
+                    <div class="content_imgBox">
+                        <a href="">
+                            <img width="100%" height="100%" alt="" src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/35054538/live/12252594/record/40175243/thumbnail/image_480.jpg?date=1747110570000">
+                            <span class="live_icon">Live</span>
+                            <span class="count">39명</span>
+                        </a>
+                    </div><!--//content_imgBox-->    
+                    
+                    
+                    <div class="content_titleBox">
+                        <div class="use_icon">
+                            <img width="40" height="40" src="https://nng-phinf.pstatic.net/MjAyNTA1MTJfMTI4/MDAxNzQ2OTc2NjQ4NTc1.0cvONfZAF_CiurNLjNw0nxpvhcbCG5jfq_ZA5bEATP4g.4mV8CcRol4uxtmyMz3QSqTo05PHeHJrWwYZyBsJ5qNQg.PNG/%EB%85%B8%EB%9E%984.png?type=f120_120_na" alt="" draggable="false">
+                        </div>
+                        <div>
+                            <h3 class="titleH3">가자, 디지몬 세계로! 🚀 애니메이션 '디지몬 어드벤쳐 1기' 무한 스트리밍</h3>
+                            <p class="cont_useName"><a href="" title="스트리머 채널로 이동">양선지</a></p>
+                             <div class="cont_tag">
+                                <a href=""><span class="tag_txt01">같이보기</span></a>
+                                <a href=""><span class="tag_txt01">디지몬</span></a>
+                                <a href=""><span class="tag_txt02">애니메이션</span></a>
+                                <a href=""><span class="tag_txt02">talk</span></a>
+                            </div>
+                        </div>
+                    </div><!--content_titleBox-->    
+                </li>
+                   <li class="content_list">
+                  
+                    <div class="content_imgBox">
+                        <a href="">
+                            <img width="100%" height="100%" alt="" src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/35890712/live/12252671/record/40175336/thumbnail/image_480.jpg?date=1747110570000">
+                            <span class="live_icon">Live</span>
+                            <span class="count">39명</span>
+                        </a>
+                    </div><!--//content_imgBox-->    
+                    
+                    
+                    <div class="content_titleBox">
+                        <div class="use_icon">
+                            <img width="40" height="40" src="https://nng-phinf.pstatic.net/MjAyNTAyMTlfMTc3/MDAxNzM5OTQ3NjM5NzE3.eKX49yo43zai_YBqBhEY6xuyMXsPe-Ex3rm-XOFAf-Ag.cP70INz4I_0UsVG-65nPGxCUmgvWxlL1hCFXc-zVqQQg.PNG/%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2025-02-19_154312.png?type=f120_120_na" alt="" draggable="false">
+                         </div>
+                        <div>
+                            <h3 class="titleH3">가자, 디지몬 세계로! 🚀 애니메이션 '디지몬 어드벤쳐 1기' 무한 스트리밍</h3>
+                            <p class="cont_useName"><a href="" title="스트리머 채널로 이동">로기</a></p>
+                             <div class="cont_tag">
+                                <a href=""><span class="tag_txt01">같이보기</span></a>
+                                <a href=""><span class="tag_txt01">디지몬</span></a>
+                                <a href=""><span class="tag_txt02">애니메이션</span></a>
+                                <a href=""><span class="tag_txt02">talk</span></a>
+                            </div>
+                        </div>
+                    </div><!--content_titleBox-->    
+                </li>
+                   <li class="content_list">
+                  
+                    <div class="content_imgBox">
+                        <a href="">
+                            <img width="100%" height="100%" alt="" src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27737670/live/12252549/record/40175181/thumbnail/image_480.jpg?date=1747110570000">
+                            <span class="live_icon">Live</span>
+                            <span class="count">39명</span>
+                        </a>
+                    </div><!--//content_imgBox-->    
+                    
+                    
+                    <div class="content_titleBox">
+                        <div class="use_icon">
+                            <img width="40" height="40" src="https://nng-phinf.pstatic.net/MjAyNDEyMTZfOTUg/MDAxNzM0MzM1ODM5Njc1.jYvqibNuXXZemq4CQ3V_Tk3sfWZqdK6ejvI7eD0embAg.K5gUJsiz26UsbkJX0JyCjPOtpXmqUNXNKKrS4RzII_Eg.PNG/84_20241216152633.png?type=f120_120_na" alt="" draggable="false">
+                        </div>
+                        <div>
+                            <h3 class="titleH3">가자, 디지몬 세계로! 🚀 애니메이션 '디지몬 어드벤쳐 1기' 무한 스트리밍</h3>
+                            <p class="cont_useName"><a href="" title="스트리머 채널로 이동">하루종일 같이보기</a></p>
+                             <div class="cont_tag">
+                                <a href=""><span class="tag_txt01">같이보기</span></a>
+                                <a href=""><span class="tag_txt01">디지몬</span></a>
+                                <a href=""><span class="tag_txt02">애니메이션</span></a>
+                                <a href=""><span class="tag_txt02">talk</span></a>
+                            </div>
+                        </div>
+                    </div><!--content_titleBox-->    
+                </li>
+            </ul>
+           <details class="content_summary">
+                    <summary><span class="blind">더보기</span></summary>
+                     <ul class="container_box">
+                <li class="content_list">
+                  
+                    <div class="content_imgBox">
+                        <a href="">
+                            <img width="100%" height="100%" alt="" src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27737670/live/12252549/record/40175181/thumbnail/image_480.jpg?date=1747111980000">
+                            <span class="live_icon">Live</span>
+                            <span class="count">39명</span>
+                        </a>
+                    </div><!--//content_imgBox-->    
+                    
+                    
+                    <div class="content_titleBox">
+                        <div class="use_icon">
+                            <img width="40" height="40" src="https://nng-phinf.pstatic.net/MjAyNDA2MDZfMjM4/MDAxNzE3NjQxNDY2ODA5.9wUbzduL4AoSvbBStjM_bmz7KOOEAPO3qiQ7fW6_9Nkg.YBa7AvmnW64xKRfSYO_xtCAK4yIK8wbFGhUbfDAKsb0g.JPEG/%EC%86%8C%EB%9D%BC%ED%98%B8%EC%8B%9C_%EC%B9%B4%EB%A0%8C_%EC%9C%A0%ED%8A%9C%EB%B8%8C_%ED%94%84%EB%A1%9C%ED%95%84.jpg?type=f120_120_na" alt="" draggable="false">
+                        </div>
+                        <div>
+                            <h3 class="titleH3">가자, 디지몬 세계로! 🚀 애니메이션 '디지몬 어드벤쳐 1기' 무한 스트리밍 밤새 같이 보자!</h3>
+                            <p class="cont_useName"><a href="" title="스트리머 채널로 이동">소라호시 카렌</a></p>
+                             <div class="cont_tag">
+                                <a href=""><span class="tag_txt01">같이보기</span></a>
+                                <a href=""><span class="tag_txt01">디지몬</span></a>
+                                <a href=""><span class="tag_txt02">애니메이션</span></a>
+                                <a href=""><span class="tag_txt02">talk</span></a>
+                            </div>
+                        </div>
+                    </div><!--content_titleBox-->    
+                </li>
+                   <li class="content_list">
+                  
+                    <div class="content_imgBox">
+                        <a href="">
+                            <img width="100%" height="100%" alt="" src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/29299633/live/12253045/record/40175795/thumbnail/image_480.jpg?date=1747110570000">
+                            <span class="live_icon">Live</span>
+                            <span class="count">39명</span>
+                        </a>
+                    </div><!--//content_imgBox-->    
+                    
+                    
+                    <div class="content_titleBox">
+                        <div class="use_icon">
+                            <img width="40" height="40" src="https://nng-phinf.pstatic.net/MjAyNDA2MDZfODQg/MDAxNzE3NjQwNjYxNTQ0.bA1O7rGx8ybzay9O3wYt1ONoxKRQEekAJPndg4lOTygg.dx3troxnTFvtBPOa9GKDtERnrKQ2PYnilYFjxgHV6P4g.PNG/%EC%A0%9C%EB%AA%A9_%EC%97%86%EC%9D%8C-1.png?type=f120_120_na" alt="" draggable="false">
+                        </div>
+                        <div>
+                            <h3 class="titleH3">가자, 디지몬 세계로! 🚀 애니메이션 '디지몬 어드벤쳐 1기' 무한 스트리밍</h3>
+                            <p class="cont_useName"><a href="" title="스트리머 채널로 이동">사메모메</a></p>
+                             <div class="cont_tag">
+                                <a href=""><span class="tag_txt01">같이보기</span></a>
+                                <a href=""><span class="tag_txt01">디지몬</span></a>
+                                <a href=""><span class="tag_txt02">애니메이션</span></a>
+                                <a href=""><span class="tag_txt02">talk</span></a>
+                            </div>
+                        </div>
+                    </div><!--content_titleBox-->    
+                </li>
+                   <li class="content_list">
+                  
+                    <div class="content_imgBox">
+                        <a href="">
+                            <img width="100%" height="100%" alt="" src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/35054538/live/12252594/record/40175243/thumbnail/image_480.jpg?date=1747110570000">
+                            <span class="live_icon">Live</span>
+                            <span class="count">39명</span>
+                        </a>
+                    </div><!--//content_imgBox-->    
+                    
+                    
+                    <div class="content_titleBox">
+                        <div class="use_icon">
+                            <img width="40" height="40" src="https://nng-phinf.pstatic.net/MjAyNTA1MTJfMTI4/MDAxNzQ2OTc2NjQ4NTc1.0cvONfZAF_CiurNLjNw0nxpvhcbCG5jfq_ZA5bEATP4g.4mV8CcRol4uxtmyMz3QSqTo05PHeHJrWwYZyBsJ5qNQg.PNG/%EB%85%B8%EB%9E%984.png?type=f120_120_na" alt="" draggable="false">
+                        </div>
+                        <div>
+                            <h3 class="titleH3">가자, 디지몬 세계로! 🚀 애니메이션 '디지몬 어드벤쳐 1기' 무한 스트리밍</h3>
+                            <p class="cont_useName"><a href="" title="스트리머 채널로 이동">양선지</a></p>
+                             <div class="cont_tag">
+                                <a href=""><span class="tag_txt01">같이보기</span></a>
+                                <a href=""><span class="tag_txt01">디지몬</span></a>
+                                <a href=""><span class="tag_txt02">애니메이션</span></a>
+                                <a href=""><span class="tag_txt02">talk</span></a>
+                            </div>
+                        </div>
+                    </div><!--content_titleBox-->    
+                </li>
+                   <li class="content_list">
+                  
+                    <div class="content_imgBox">
+                        <a href="">
+                            <img width="100%" height="100%" alt="" src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/35890712/live/12252671/record/40175336/thumbnail/image_480.jpg?date=1747110570000">
+                            <span class="live_icon">Live</span>
+                            <span class="count">39명</span>
+                        </a>
+                    </div><!--//content_imgBox-->    
+                    
+                    
+                    <div class="content_titleBox">
+                        <div class="use_icon">
+                            <img width="40" height="40" src="https://nng-phinf.pstatic.net/MjAyNTAyMTlfMTc3/MDAxNzM5OTQ3NjM5NzE3.eKX49yo43zai_YBqBhEY6xuyMXsPe-Ex3rm-XOFAf-Ag.cP70INz4I_0UsVG-65nPGxCUmgvWxlL1hCFXc-zVqQQg.PNG/%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2025-02-19_154312.png?type=f120_120_na" alt="" draggable="false">
+                         </div>
+                        <div>
+                            <h3 class="titleH3">가자, 디지몬 세계로! 🚀 애니메이션 '디지몬 어드벤쳐 1기' 무한 스트리밍</h3>
+                            <p class="cont_useName"><a href="" title="스트리머 채널로 이동">로기</a></p>
+                             <div class="cont_tag">
+                                <a href=""><span class="tag_txt01">같이보기</span></a>
+                                <a href=""><span class="tag_txt01">디지몬</span></a>
+                                <a href=""><span class="tag_txt02">애니메이션</span></a>
+                                <a href=""><span class="tag_txt02">talk</span></a>
+                            </div>
+                        </div>
+                    </div><!--content_titleBox-->    
+                </li>
+                   <li class="content_list">
+                  
+                    <div class="content_imgBox">
+                        <a href="">
+                            <img width="100%" height="100%" alt="" src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/27737670/live/12252549/record/40175181/thumbnail/image_480.jpg?date=1747110570000">
+                            <span class="live_icon">Live</span>
+                            <span class="count">39명</span>
+                        </a>
+                    </div><!--//content_imgBox-->    
+                    
+                    
+                    <div class="content_titleBox">
+                        <div class="use_icon">
+                            <img width="40" height="40" src="https://nng-phinf.pstatic.net/MjAyNDEyMTZfOTUg/MDAxNzM0MzM1ODM5Njc1.jYvqibNuXXZemq4CQ3V_Tk3sfWZqdK6ejvI7eD0embAg.K5gUJsiz26UsbkJX0JyCjPOtpXmqUNXNKKrS4RzII_Eg.PNG/84_20241216152633.png?type=f120_120_na" alt="" draggable="false">
+                        </div>
+                        <div>
+                            <h3 class="titleH3">가자, 디지몬 세계로! 🚀 애니메이션 '디지몬 어드벤쳐 1기' 무한 스트리밍</h3>
+                            <p class="cont_useName"><a href="" title="스트리머 채널로 이동">하루종일 같이보기</a></p>
+                             <div class="cont_tag">
+                                <a href=""><span class="tag_txt01">같이보기</span></a>
+                                <a href=""><span class="tag_txt01">디지몬</span></a>
+                                <a href=""><span class="tag_txt02">애니메이션</span></a>
+                                <a href=""><span class="tag_txt02">talk</span></a>
+                            </div>
+                        </div>
+                    </div><!--content_titleBox-->    
+                </li>
+            </ul>
+
+            </details>        
+        </section>
+         <section class="container_wrap">
+            <h2>방송사 같이보기 공식채널</h2>
+
+            <ul class="container_box">
+                <li class="content_list">
+                  
+                    <div class="content_imgBox">
+                        <a href="">
+                            <img width="100%" height="100%" alt="" src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/37544714/live/11529431/record/38640841/thumbnail/image_480.jpg?date=1747110870000">
+                            <span class="live_icon">Live</span>
+                            <span class="count">39명</span>
+                        </a>
+                    </div><!--//content_imgBox-->    
+                    
+                    
+                    <div class="content_titleBox">
+                        <div class="use_icon">
+                            <img width="40" height="40" src="https://nng-phinf.pstatic.net/MjAyNDA2MDZfMjM4/MDAxNzE3NjQxNDY2ODA5.9wUbzduL4AoSvbBStjM_bmz7KOOEAPO3qiQ7fW6_9Nkg.YBa7AvmnW64xKRfSYO_xtCAK4yIK8wbFGhUbfDAKsb0g.JPEG/%EC%86%8C%EB%9D%BC%ED%98%B8%EC%8B%9C_%EC%B9%B4%EB%A0%8C_%EC%9C%A0%ED%8A%9C%EB%B8%8C_%ED%94%84%EB%A1%9C%ED%95%84.jpg?type=f120_120_na" alt="" draggable="false">
+                        </div>
+                        <div>
+                            <h3 class="titleH3">가자, 디지몬 세계로! 🚀 애니메이션 '디지몬 어드벤쳐 1기' 무한 스트리밍 밤새 같이 보자!</h3>
+                            <p class="cont_useName"><a href="" title="스트리머 채널로 이동">소라호시 카렌</a></p>
+                             <div class="cont_tag">
+                                <a href=""><span class="tag_txt01">같이보기</span></a>
+                                <a href=""><span class="tag_txt01">디지몬</span></a>
+                                <a href=""><span class="tag_txt02">애니메이션</span></a>
+                                <a href=""><span class="tag_txt02">talk</span></a>
+                            </div>
+                        </div>
+                    </div><!--content_titleBox-->    
+                </li>
+                   <li class="content_list">
+                  
+                    <div class="content_imgBox">
+                        <a href="">
+                            <img width="100%" height="100%" alt="" src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/36092557/live/12234514/record/40148656/thumbnail/image_480.jpg?date=1747110870000">
+                            <span class="live_icon">Live</span>
+                            <span class="count">39명</span>
+                        </a>
+                    </div><!--//content_imgBox-->    
+                    
+                    
+                    <div class="content_titleBox">
+                        <div class="use_icon">
+                            <img width="40" height="40" src="https://nng-phinf.pstatic.net/MjAyNDA2MDZfODQg/MDAxNzE3NjQwNjYxNTQ0.bA1O7rGx8ybzay9O3wYt1ONoxKRQEekAJPndg4lOTygg.dx3troxnTFvtBPOa9GKDtERnrKQ2PYnilYFjxgHV6P4g.PNG/%EC%A0%9C%EB%AA%A9_%EC%97%86%EC%9D%8C-1.png?type=f120_120_na" alt="" draggable="false">
+                        </div>
+                        <div>
+                            <h3 class="titleH3">가자, 디지몬 세계로! 🚀 애니메이션 '디지몬 어드벤쳐 1기' 무한 스트리밍</h3>
+                            <p class="cont_useName"><a href="" title="스트리머 채널로 이동">사메모메</a></p>
+                             <div class="cont_tag">
+                                <a href=""><span class="tag_txt01">같이보기</span></a>
+                                <a href=""><span class="tag_txt01">디지몬</span></a>
+                                <a href=""><span class="tag_txt02">애니메이션</span></a>
+                                <a href=""><span class="tag_txt02">talk</span></a>
+                            </div>
+                        </div>
+                    </div><!--content_titleBox-->    
+                </li>
+                   <li class="content_list">
+                  
+                    <div class="content_imgBox">
+                        <a href="">
+                            <img width="100%" height="100%" alt="" src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/37934783/live/11992195/record/39549116/thumbnail/image_480.jpg?date=1747111140000">
+                            <span class="live_icon">Live</span>
+                            <span class="count">39명</span>
+                        </a>
+                    </div><!--//content_imgBox-->    
+                    
+                    
+                    <div class="content_titleBox">
+                        <div class="use_icon">
+                            <img width="40" height="40" src="https://nng-phinf.pstatic.net/MjAyNTA1MTJfMTI4/MDAxNzQ2OTc2NjQ4NTc1.0cvONfZAF_CiurNLjNw0nxpvhcbCG5jfq_ZA5bEATP4g.4mV8CcRol4uxtmyMz3QSqTo05PHeHJrWwYZyBsJ5qNQg.PNG/%EB%85%B8%EB%9E%984.png?type=f120_120_na" alt="" draggable="false">
+                        </div>
+                        <div>
+                            <h3 class="titleH3">가자, 디지몬 세계로! 🚀 애니메이션 '디지몬 어드벤쳐 1기' 무한 스트리밍</h3>
+                            <p class="cont_useName"><a href="" title="스트리머 채널로 이동">양선지</a></p>
+                             <div class="cont_tag">
+                                <a href=""><span class="tag_txt01">같이보기</span></a>
+                                <a href=""><span class="tag_txt01">디지몬</span></a>
+                                <a href=""><span class="tag_txt02">애니메이션</span></a>
+                                <a href=""><span class="tag_txt02">talk</span></a>
+                            </div>
+                        </div>
+                    </div><!--content_titleBox-->    
+                </li>
+                   <li class="content_list">
+                  
+                    <div class="content_imgBox">
+                        <a href="">
+                            <img width="100%" height="100%" alt="" src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/36092567/live/12234516/record/40148658/thumbnail/image_480.jpg?date=1747110870000">
+                            <span class="live_icon">Live</span>
+                            <span class="count">39명</span>
+                        </a>
+                    </div><!--//content_imgBox-->    
+                    
+                    
+                    <div class="content_titleBox">
+                        <div class="use_icon">
+                            <img width="40" height="40" src="https://nng-phinf.pstatic.net/MjAyNTAyMTlfMTc3/MDAxNzM5OTQ3NjM5NzE3.eKX49yo43zai_YBqBhEY6xuyMXsPe-Ex3rm-XOFAf-Ag.cP70INz4I_0UsVG-65nPGxCUmgvWxlL1hCFXc-zVqQQg.PNG/%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2025-02-19_154312.png?type=f120_120_na" alt="" draggable="false">
+                         </div>
+                        <div>
+                            <h3 class="titleH3">가자, 디지몬 세계로! 🚀 애니메이션 '디지몬 어드벤쳐 1기' 무한 스트리밍</h3>
+                            <p class="cont_useName"><a href="" title="스트리머 채널로 이동">로기</a></p>
+                             <div class="cont_tag">
+                                <a href=""><span class="tag_txt01">같이보기</span></a>
+                                <a href=""><span class="tag_txt01">디지몬</span></a>
+                                <a href=""><span class="tag_txt02">애니메이션</span></a>
+                                <a href=""><span class="tag_txt02">talk</span></a>
+                            </div>
+                        </div>
+                    </div><!--content_titleBox-->    
+                </li>
+                   <li class="content_list">
+                  
+                    <div class="content_imgBox">
+                        <a href="">
+                           <img width="100%" height="100%" alt="" src="https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/37934779/live/11992192/record/39549113/thumbnail/image_480.jpg?date=1747111140000">
+                            <span class="live_icon">Live</span>
+                            <span class="count">39명</span>
+                        </a>
+                    </div><!--//content_imgBox-->    
+                    
+                    
+                    <div class="content_titleBox">
+                        <div class="use_icon">
+                            <img width="40" height="40" src="https://nng-phinf.pstatic.net/MjAyNDEyMTZfOTUg/MDAxNzM0MzM1ODM5Njc1.jYvqibNuXXZemq4CQ3V_Tk3sfWZqdK6ejvI7eD0embAg.K5gUJsiz26UsbkJX0JyCjPOtpXmqUNXNKKrS4RzII_Eg.PNG/84_20241216152633.png?type=f120_120_na" alt="" draggable="false">
+                        </div>
+                        <div>
+                            <h3 class="titleH3">가자, 디지몬 세계로! 🚀 애니메이션 '디지몬 어드벤쳐 1기' 무한 스트리밍</h3>
+                            <p class="cont_useName"><a href="" title="스트리머 채널로 이동">하루종일 같이보기</a></p>
+                             <div class="cont_tag">
+                                <a href=""><span class="tag_txt01">같이보기</span></a>
+                                <a href=""><span class="tag_txt01">디지몬</span></a>
+                                <a href=""><span class="tag_txt02">애니메이션</span></a>
+                                <a href=""><span class="tag_txt02">talk</span></a>
+                            </div>
+                        </div>
+                    </div><!--content_titleBox-->    
+                </li>
+            </ul>
+        </section>
+       
+    </main>
+
+</div>
+
+<script>
+   $(document).ready(function() {
+    $("#hamburger").click(function() {
+        $(".menu_wrap").toggleClass("active");
+
+        if ($(".menu_wrap").hasClass("active")) {
+            $(".menu_wrap").addClass("expanded").removeClass("collapsed");
+        } else {
+            $(".menu_wrap").addClass("collapsed").removeClass("expanded");
+        }
+    });
+});
+
+/* 다크모드 */
+$(".menu_wrap").addClass("collapsed"); // 초기 상태 설정
+const toggleButton = document.getElementById('toggle-mode');
+const themeImage = document.querySelector('div img'); // 이미지 요소 가져오기
+
+if(localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-mode');
+    themeImage.src = 'image/dark-img.gif'; // 다크 모드일 때 변경될 GIF 이미지
+}
+
+toggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+    localStorage.setItem('theme', theme);
+
+    // 이미지 변경
+    themeImage.src = theme === 'dark' ? 'image/dark-img.gif' : 'image/light-img.gif';
+});
+
+
+    
+ /* 상단 slide */  
+    $('.autoplay').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+});
+
+ /* 상단 아코디언 */  
+    $('.accordion').accordion();
+
+
+		
+    
+</script>
+
+</body>
+</html>
