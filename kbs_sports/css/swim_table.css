@@ -1,0 +1,478 @@
+@charset "utf-8";
+
+.top_visual p.top_btn_f {
+  display: flex;
+  gap: 10px;
+  top: 80%;
+  width: 38%;
+}
+.tab-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  color: #363f4dab;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.day_01.active {
+  background-color: #1687eb;
+  color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.desktop-table.active {
+  border: 1px solid #1687eb;
+}
+.Reg_btn a.color_style01 {
+  background-color: #1688eb83;
+}
+.day_02.active {
+  background-color: #2ebc9d;
+  color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.desktop-table tr.active {
+  color: #1687eb;
+}
+.desktop-table tr {
+  color: #2ebc9d;
+}
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.desktop-table td .span_sy {
+  color: #d5d5d5;
+  font-size: 1.4rem;
+}
+
+/* PC용 테이블 */
+.desktop-table {
+  display: block;
+  background: #fff;
+  border: 1px solid #2ebc9d;
+
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  overflow: hidden;
+}
+
+.desktop-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.desktop-table td {
+  color: #363f4d;
+}
+.desktop-table th,
+.desktop-table td {
+  border: 1px solid #d5d5d5;
+  padding: 8px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.time_box {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+  align-items: self-end;
+  padding: 82px 0;
+}
+.g_llin_btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.g_llin_btn a {
+  text-align: center;
+}
+.time_wrap {
+  position: relative;
+}
+.time_box dd {
+  color: #363f4d;
+}
+.time_box dt {
+  color: #1e2022;
+}
+.time_box dd {
+  text-align: right;
+}
+.time_box dt span {
+  display: block;
+  padding-top: 5px;
+  color: #363f4db2;
+  font-size: 1.2rem;
+}
+.time_box dt,
+.time_box dd {
+  font-size: 1.8rem;
+  padding: 20px 0;
+
+  border-bottom: 1px solid #d5d5d5;
+}
+/* 모바일용 셀렉트 */
+.mobile-table {
+  display: none;
+}
+.mobile-table label {
+  font-size: 1.6rem;
+  width: 20%;
+
+  display: inline-block;
+}
+.mobile-table select {
+  width: 79%;
+  padding: 8px;
+  font-size: 1.4rem;
+  color: #363f4d;
+  border: none;
+  margin-top: 3px;
+  border-radius: 5px;
+}
+#mwf-lines select,
+#tt-lines select {
+  appearance: none;
+  border-radius: 0;
+}
+.mobile-table option {
+  font-size: 1.6rem;
+}
+@media (max-width: 768px) {
+  .desktop-table {
+    display: none;
+  }
+  .tab-button {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .mobile-table {
+    display: block;
+  }
+  .top_visual p.top_btn_f {
+    width: 96%;
+  }
+}
+
+.tabs {
+  display: flex;
+}
+
+/*수영 이용권 구매*/
+
+/* 공통 CSS */
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1.8rem;
+  color: #363f4d;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  height: 40px;
+  font-size: 1.4rem;
+}
+
+.description,
+.notice {
+  font-size: 1.4rem;
+  color: #b6b8bb;
+  margin-top: 4px;
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.radio-group label,
+.radio-group label,
+.checkbox-group label {
+  padding: 9px 30px;
+  width: auto;
+  border-radius: 6px;
+  background-color: #b6b8bb;
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #b6b8bb;
+}
+input[type="radio"]:checked + label {
+  color: #fff;
+  border-color: transparent;
+}
+
+.default-day:checked + label,
+.time:checked + label,
+.age:checked + label,
+.program:checked + label {
+  background-color: #1687eb;
+}
+
+.weekend-day:checked + label,
+.weekend-option:checked + label {
+  background-color: #f64140;
+}
+.sty_red {
+  color: #f64140;
+  font-size: 1.4rem;
+}
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.form-buttons button {
+  flex: 1;
+  padding: 12px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #fff;
+  color: #b6b8bb;
+}
+
+.form-buttons .submit-btn {
+  background-color: #28c88a;
+  color: #fff;
+  border: none;
+}
+
+.price {
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #1e2022;
+}
+/* 체크박스 스타일 적용 동일하게 */
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked + label {
+  color: #fff;
+  background-color: #1687eb;
+  border-color: transparent;
+}
+.ptop {
+  padding-top: 82px;
+}
+.bor-b {
+  background: #f7f7f7;
+}
+.tur_p {
+  padding-bottom: 82px;
+}
+.not_p {
+  padding-bottom: 0px;
+}
+.bor-b .info_box {
+  margin-bottom: 0px;
+}
+
+/*수강신청 안내 */
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+  color: white;
+  background-color: #007bff;
+  border-color: transparent;
+}
+
+.guid_box {
+  display: grid;
+}
+
+.guid_box_1 {
+  grid-template-columns: 48% 48%;
+  gap: 20px;
+}
+.guid_box_2 {
+  grid-template-columns: 48% 48%;
+  gap: 20px;
+}
+.guid_box h3 {
+  padding: 12px 0;
+  font-size: 2.4rem;
+  color: #1e2022;
+}
+.guid_box p {
+  font-size: 1.6rem;
+  color: #363f4d;
+  margin: 0;
+}
+.reco li {
+  border: 1px solid #d5d5d5;
+  border-radius: 8px;
+}
+.reco_img {
+  width: 100%;
+  height: 258px;
+  overflow: hidden;
+}
+.reco_img:hover img {
+  transform: scale(1.1); /* 10% 확대 */
+  transition: transform 0.3s ease-in-out; /* 부드러운 애니메이션 */
+}
+.reco_img img {
+  height: 258px;
+  width: 100%;
+  object-fit: cover;
+}
+.reco_text {
+  padding: 14px 12px 0 12px;
+  background: #fff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.mag_t {
+  margin-top: 82px;
+}
+.top_visual p.top_btn_t {
+  display: flex;
+  gap: 10px;
+  top: 80%;
+  width: 30%;
+}
+.Reg_btn a.color_style02 {
+  background-color: #00101f7e;
+}
+.Reg_btn a.color_style02:hover {
+  background-color: #032542d5;
+}
+.emo_box {
+  text-align: center;
+}
+.emo_box .emo {
+  font-size: 3rem;
+}
+.emo_box span {
+  font-size: 1.2rem;
+  color: #363f4daf;
+  padding-bottom: 12px;
+  display: block;
+}
+
+/*수강신청 문의*/
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  height: 100px;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.6rem;
+  font-family: "Pretendard-Regular";
+  color: #363f4d;
+}
+textarea::placeholder {
+  color: #b6b8bb;
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+.que_text_box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.que_text_box li {
+  border: 1px solid #ccc;
+  padding: 20px 10px;
+  border-radius: 8px;
+}
+.que_text_box .que_h3 {
+  font-size: 2.1rem;
+  display: flex;
+  color: #1e2022;
+}
+.que_text_box .que_p {
+  font-size: 1.6rem;
+  margin: 10px 0;
+  display: flex;
+}
+.que_h3::before {
+  content: "Q";
+  display: inline-block;
+  color: #fff;
+  font-size: 1.8rem;
+  background-color: #1687eb;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  line-height: 28px;
+  text-align: center;
+  margin-right: 8px;
+}
+
+.que_p::before {
+  content: "A";
+  display: inline-block;
+  color: #fff;
+  font-size: 1.8rem;
+  background-color: #28c88a;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  line-height: 20px;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0 8px 0 25px;
+}
+
+/*tb일 경우*/
+@media screen and (max-width: 700px) {
+  .ptop {
+    padding-top: 0px;
+  }
+  .guid_box_2 {
+    grid-template-columns: 100%;
+  }
+  .mag_t {
+    margin-top: 0;
+  }
+  .top_visual p.top_btn_t {
+    width: 90%;
+  }
+}

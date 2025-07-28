@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swim_table.css">
+    <script src="js/event.js" defer></script>
+    <title>KBS스포츠월드 수영 이용권 구매</title>
+
+
+
+  </head>
+
+  <body>
+    <button onclick="topFunction()" id="topBtn" ></button>
+    <header class="flex">
+      <h1>
+        <a href="index.html" class="pc_logo"><img src="image/w_logo.png" alt="KBS스포츠월드 로고" /></a>
+        <a href="index.html" class="m_logo"><img src="image/m_logo.png" alt="KBS스포츠월드 모바일 로고" /></a>
+      </h1>
+      <nav class="gnb">
+        <h2 class="blind">주메뉴</h2>
+        <ul class="flex">
+          <li><a href="program.html">프로그램</a></li>
+          <li><a href="all_guide.html">수강안내</a></li>
+          <li><a href="que.html">문의사항</a></li>
+          <li><a href="mypage.html">MY페이지</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <div class="swim">
+        <div class="top_visual">
+            <img src="image/top_bg2.jpg" alt="수영강습 편셩표">
+            <p>이용권 구매</p>
+            <span>각 레인별 수업 편성표 입니다.</span>
+
+            <p class="Reg_btn top_btn_f">
+                <a href="swim_table.html" class="color_style01">강습편성표</a> 
+                <a href="swim_guide.html" class="color_style01">수영강습 및 이용시간 안내</a>
+                <a href="swim_buy.html" >이용권 구매</a>
+            </p>
+        </div>
+        
+      <section class="inner">
+  
+        <div class="info_box time_wrap">
+          <div class="title_box_r">
+            <h2>자유 수영권 구매</h2>
+            <p>오전, 오후 자유롭게 이용이 가능합니다.</p>
+          </div>
+         <div class="ptop">
+          <h2 class="blind">요금 선택</h2>
+  <form>
+    <div class="form-group">
+      <label>요일 선택</label>
+      <div class="radio-group">
+        <input type="radio" name="day" id="mon" class="default-day" checked>
+        <label for="mon">월요일</label>
+        <input type="radio" name="day" id="tue" class="default-day">
+        <label for="tue">화요일</label>
+        <input type="radio" name="day" id="wed" class="default-day">
+        <label for="wed">수요일</label>
+        <input type="radio" name="day" id="thu" class="default-day">
+        <label for="thu">목요일</label>
+        <input type="radio" name="day" id="fri" class="default-day">
+        <label for="fri">금요일</label>
+        <input type="radio" name="day" id="sat" class="weekend-day">
+        <label for="sat">토요일</label>
+        <input type="radio" name="day" id="sun" class="weekend-day">
+        <label for="sun">일요일</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>시간 선택</label>
+      <div class="radio-group">
+        <input type="radio" name="time" id="am" class="time" checked>
+        <label for="am">오전</label>
+        <input type="radio" name="time" id="pm" class="time">
+        <label for="pm">오후</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>연령</label>
+      <div class="radio-group">
+        <input type="radio" name="age" class="age" id="adult" checked>
+        <label for="adult">성인</label>
+        <input type="radio" name="age" class="age" id="teen">
+        <label for="teen" >청소년</label>
+        <input type="radio" name="age" class="age" id="kid">
+        <label for="kid" >6세 이하</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <span class="price" id="price">이용금액: 9,000원</span>
+      <div class="notice">주말은 이용요금이 <span class="sty_red">1,000원 추가</span>  됩니다.</div>
+    </div>
+      <div class="form-buttons">
+      <button type="submit" class="submit-btn">구매하기</button>
+    </div>
+  </form>
+         
+        
+      </section>
+    <div class="bor-b tur_p">
+            <section class="inner">
+  
+        <div class="info_box time_wrap">
+          <div class="title_box_r">
+            <h2>특별강습 신청</h2>
+            <p>수영 고급 기술 및 아쿠아로빅 특별 강습</p>
+          </div>
+        <div class="ptop">
+          <h2 class="blind">신청 폼</h2>
+  <form>
+    <div class="form-group">
+      <label for="name">이름</label>
+      <input type="text" id="name" placeholder="이름을 입력하세요">
+      <div class="description">실명을 입력해 주세요.</div>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">전화번호</label>
+      <input type="text" id="phone" placeholder="연락처를 입력하세요">
+      <div class="description">연락 가능한 번호를 입력해 주세요.</div>
+    </div>
+
+    <div class="form-group">
+      <label>선택 프로그램</label>
+      <div class="radio-group">
+        <input type="radio" name="program" id="personal" class="program" checked>
+        <label for="personal">개인강습</label>
+        <input type="radio" name="program" id="group" class="program">
+        <label for="group">6인 이하 소그룹</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>요일 및 횟수 선택</label>
+      <div class="radio-group">
+        <input type="radio" name="schedule" id="monwedfri" class="default-day" checked>
+        <label for="monwedfri">월/수/금: 주 3회</label>
+        <input type="radio" name="schedule" id="tuethu" class="default-day">
+        <label for="tuethu">화/목: 주 2회</label>
+        <input type="radio" name="schedule" id="weekend" class="weekend-option">
+        <label for="weekend">주말: 주 1회</label>
+      </div>
+    </div>
+
+    <div class="form-buttons">
+      <button type="button" class="cancel-btn">취소하기</button>
+      <button type="submit" class="submit-btn">신청하기</button>
+    </div>
+  </form>
+        </div>
+        </div>
+        
+      </section>
+    </div>
+    <footer>
+      <section class="footer">
+        <h2 class="blind">이용약관</h2>
+        <ul>
+          <li><a href="">이용약관</a></li>
+          <li><a href="">개인정보처리방침</a></li>
+          <li><a href="">고객센터</a></li>
+        </ul>
+      </section>
+      <section class="ft_address">
+        <h2 class="blind">오시는 길</h2>
+        <div class="inner address_box">
+          <address>
+            <span>서울시 강서구 공항대로 376(화곡동)</span>
+            <span>대표자: 장한식</span>
+            <span>사업자등록번호: 109-81-20807</span>
+            <span>통신판매업신고 제 2004-16-1329호</span></br>
+            <span>대표번호: 02-2600-8808</span>
+            <span>팩스번호: 02-2600-8719</span>
+          </address>
+          <div class="ft_sns_icon">
+            <ul>
+              <li>
+                <a href=""><img src="image/E8.png" alt="페이스북" /></a>
+              </li>
+              <li>
+                <a href=""><img src="image/E5.png" alt="유튜브" /></a>
+              </li>
+              <li>
+                <a href=""><img src="image/E11.png" alt="인스타" /></a>
+              </li>
+              <li>
+                <a href=""><img src="image/E1.png" alt="네이버블로그" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      </div>
+    </footer>
+
+ <script>
+
+    // 연령 선택 라디오 버튼들을 모두 가져옴
+    const ageRadios = document.querySelectorAll('input[name="age"]');
+
+    // 요일 선택 라디오 버튼들을 모두 가져옴
+    const dayRadios = document.querySelectorAll('input[name="day"]');
+
+    // 요금이 표시될 요소를 가져옴
+    const priceElement = document.getElementById('price');
+
+    // 요금을 계산하고 화면에 출력하는 함수
+    function updatePrice() {
+      // 선택된 요일의 ID (예: 'mon', 'sat')를 가져옴
+      const selectedDay = document.querySelector('input[name="day"]:checked').id;
+
+      // 선택된 연령대의 ID (예: 'adult', 'teen')를 가져옴
+      const selectedAge = document.querySelector('input[name="age"]:checked').id;
+
+      // 주말 여부 판단 (토요일 또는 일요일인 경우 true)
+      const isWeekend = selectedDay === 'sat' || selectedDay === 'sun';
+
+      let price = 0; // 초기 요금 설정
+
+      // 연령대와 주말 여부에 따라 요금 설정
+      if (selectedAge === 'adult') price = isWeekend ? 10000 : 9000;
+      if (selectedAge === 'teen')  price = isWeekend ?  9000 : 8000;
+      if (selectedAge === 'kid')   price = isWeekend ?  8000 : 7000;
+
+      // 계산된 요금을 콤마(,) 포함하여 표시
+      priceElement.textContent = `이용금액: ${price.toLocaleString()}원`;
+    }
+
+    // 연령 선택이 변경될 때 요금 업데이트
+    ageRadios.forEach(r => r.addEventListener('change', updatePrice));
+
+    // 요일 선택이 변경될 때 요금 업데이트
+    dayRadios.forEach(r => r.addEventListener('change', updatePrice));
+
+    // 페이지 로딩 시 초기 요금 설정
+    updatePrice();
+</script>
+  </body>
+</html>

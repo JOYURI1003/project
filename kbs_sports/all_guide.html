@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swim_table.css">
+    <script src="js/event.js" defer></script>
+    <title>KBS스포츠월드 수강신청 안내</title>
+
+
+  </head>
+
+  <body>
+    <button onclick="topFunction()" id="topBtn" ></button>
+    <header class="flex">
+      <h1>
+        <a href="index.html" class="pc_logo"><img src="image/w_logo.png" alt="KBS스포츠월드 로고" /></a>
+        <a href="index.html" class="m_logo"><img src="image/m_logo.png" alt="KBS스포츠월드 모바일 로고" /></a>
+      </h1>
+      <nav class="gnb">
+        <h2 class="blind">주메뉴</h2>
+        <ul class="flex">
+          <li><a href="program.html">프로그램</a></li>
+          <li><a href="all_guide.html" class="gnb_txt">수강안내</a></li>
+          <li><a href="que.html">문의사항</a></li>
+          <li><a href="mypage.html">MY페이지</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="swim">
+        <div class="top_visual">
+            <img src="image/top_bg3.jpg" alt="수강신청 및 안내">
+            <p>수강신청 및 안내</p>
+            <span>최고의 스포츠 프로그램을 선택하세요!</span>
+
+             <p class="Reg_btn top_btn_t">
+                <a href="program.html" class="color_style02">프로그램 목록</a> 
+                <a href="que.html" class="color_style02" >수강신청 문의</a>
+            </p>
+        </div>
+
+
+      <section  class="inner">
+        <div class="info_box time_wrap mag_t">
+          <div class="title_box_r">
+            <h2>프로그램 신청 방법</h2>
+            <p>간단한 신청 절차를 따라주세요.</p>
+          </div>
+          <ul class="guid_box guid_box_1">
+            <li>
+              <div class="emo_box">
+                <p class="emo">&#128221;</p>
+                <h3>회원가입</h3>  
+                <span>새로운 회원가입을 진행합니다.</span>
+                <p>간단한 정보 입력</p>
+                
+              </div>
+             
+            </li>
+            <li>
+              <div class="emo_box">
+                <p class="emo">&#128204;</p>
+               <h3>프로그램 선택</h3>  
+                <span>신청할 프로그램을 선택하세요</span>
+                <p>원하는 시간대 확인</p> 
+              </div>
+              
+            </li>
+            <li>
+              <div class="emo_box">
+                <p class="emo">&#128179;</p>
+                <h3>결제</h3>  
+                <span>온라인으로 쉽게 결제합니다.</span>
+                <p>신용카드 또는 계좌이체</p> 
+              </div>
+             
+            </li>
+            <li>
+              
+              <div class="emo_box">
+                <p class="emo">&#127881;</p>
+                <h3>확인 및 참석</h3>  
+                <span>프로그램 참석을 확인하세요.</span>
+                <p>스케줄에 맞춰 참여</p> 
+              </div>
+             
+            </li>
+          </ul>
+         
+        </div>
+      </section>
+
+   <div class="bor-b tur_p">
+      <section  class="inner ">
+        <div class="info_box time_wrap ">
+          <div class="title_box_r">
+            <h2>추천 프로그램</h2>
+            <p>다양한 프로그램을 확인하세요!</p>
+            <p class="view_btn"><a href="">더보기</a></p>
+          </div>
+          <ul class="guid_box guid_box_2 reco mag_t">
+            <li><a href="">
+              <div class="reco_img"><img src="image/reco1.jpg" alt="초급 검도"></div>
+              <div class="reco_text">
+                <p>화,목 오전 10시</p>
+                <h3>초급 검도</h3>  
+              </div>
+              </a>
+            </li>
+            <li><a href="">
+              <div class="reco_img"><img src="image/reco2.jpg" alt="초급 스쿼시"></div>
+              <div class="reco_text">
+                <p>월, 수 오후 4시</p>
+                <h3>초급 스쿼시</h3>  
+              </div>
+              </a>
+            </li>
+            <li><a href="">
+              <div class="reco_img"><img src="image/reco3.jpg" alt="중급 수영"></div>
+              <div class="reco_text">
+                <p>금요일 오전 9시</p>
+                <h3>중급 수영</h3>  
+              </div>
+              </a>
+            </li>
+            <li><a href="">
+              <div class="reco_img"><img src="image/reco4.jpg" alt="초급 필라테스"></div>
+              <div class="reco_text">
+                <p>토요일 오후 5시</p>
+                <h3>초급 필라테스</h3>  
+              </div>
+              </a>
+            </li>
+          </ul>
+    </div>      
+        </div>
+      </section>
+       <section  class="inner mag_t">
+        <div class="info_box time_wrap">
+          <div class="title_box_r">
+            <h2>수강신청 작성</h2>
+            <p>아래 양식을 작성해 주세요.</p>
+          </div>
+          
+          <div>
+            <h2 class="blind">프로그램 신청</h2>
+              <form>
+                <div class="form-group">
+                  <label for="name">이름</label>
+                  <input type="text" id="name" placeholder="이름을 입력하세요">
+                  <div class="description">실명을 입력해 주세요.</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">전화번호</label>
+                  <input type="text" id="phone" placeholder="연락처를 입력하세요">
+                  <div class="description">연락 가능한 번호를 입력해 주세요.</div>
+                </div>
+
+                <div class="form-group">
+                  <label>선택 프로그램</label>
+                  <div class="checkbox-group">
+                    <input type="checkbox" id="swim"><label for="swim">수영</label>
+                    <input type="checkbox" id="ball"><label for="ball">볼링</label>
+                    <input type="checkbox" id="health"><label for="health">헬스</label>
+                    <input type="checkbox" id="squash"><label for="squash">스쿼시</label>
+                    <input type="checkbox" id="golf"><label for="golf">골프</label>
+                    <input type="checkbox" id="pilates"><label for="pilates">필라테스</label>
+                    <input type="checkbox" id="basketball"><label for="basketball">농구</label>
+                    <input type="checkbox" id="yoga"><label for="yoga">요가</label>
+                    <input type="checkbox" id="dance"><label for="dance">댄스</label>
+                    <input type="checkbox" id="judo"><label for="judo">검도</label>
+                    <input type="checkbox" id="climbing"><label for="climbing">클라이밍</label>
+                    <input type="checkbox" id="aqua"><label for="aqua">아쿠아로빅</label>
+                  </div>
+                </div>
+            <div class="form-group">
+                  <label>시간 선택</label>
+                  <div class="radio-group">
+                    <input type="radio" name="time" id="am" checked>
+                    <label for="am">오전</label>
+                    <input type="radio" name="time" id="pm">
+                    <label for="pm">오후</label>
+                  </div>
+                </div>
+                <div class="form-buttons">
+                  <button type="button" class="cancel-btn">취소하기</button>
+                  <button type="submit" class="submit-btn">신청하기</button>
+                </div>
+              </form>
+          </div>
+          
+        </div>
+      </section>
+    </div>
+    <footer>
+      <section class="footer">
+        <h2 class="blind">이용약관</h2>
+        <ul>
+          <li><a href="">이용약관</a></li>
+          <li><a href="">개인정보처리방침</a></li>
+          <li><a href="">고객센터</a></li>
+        </ul>
+      </section>
+      <section class="ft_address">
+        <h2 class="blind">오시는 길</h2>
+        <div class="inner address_box">
+          <address>
+            <span>서울시 강서구 공항대로 376(화곡동)</span>
+            <span>대표자: 장한식</span>
+            <span>사업자등록번호: 109-81-20807</span>
+            <span>통신판매업신고 제 2004-16-1329호</span></br>
+            <span>대표번호: 02-2600-8808</span>
+            <span>팩스번호: 02-2600-8719</span>
+          </address>
+          <div class="ft_sns_icon">
+            <ul>
+              <li>
+                <a href=""><img src="image/E8.png" alt="페이스북" /></a>
+              </li>
+              <li>
+                <a href=""><img src="image/E5.png" alt="유튜브" /></a>
+              </li>
+              <li>
+                <a href=""><img src="image/E11.png" alt="인스타" /></a>
+              </li>
+              <li>
+                <a href=""><img src="image/E1.png" alt="네이버블로그" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+
+
+  </body>
+</html>
